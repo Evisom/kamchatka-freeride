@@ -1,0 +1,54 @@
+.navbar
+    .navbar-r1
+        .wrapper
+            .navbar-r1-links
+                a.navbar-r1-links-a(href="#") Услуги
+                a.navbar-r1-links-a(href="#") Наша команда
+                a.navbar-r1-links-a(href="#") Блог
+                a.navbar-r1-links-a(href="#") О нас
+                a.navbar-r1-links-a(href="#") Частые вопросы
+                a.navbar-r1-links-a(href="#") Контакты
+            .navbar-r1-lang
+                a.navbar-r1-lang-a.navbar-r1-lang-a-active(href="#") RU
+                a.navbar-r1-lang-a(href="#") EN
+
+    .navbar-r2
+        .wrapper
+            button.navbar-r2-burger
+                img(src="./img/icon/burger.svg")
+            a(href="#")
+                img.navbar-r2-logo(src="./img/logo.svg")
+            .navbar-r2-main
+                .navbar-r2-main-links
+                    ul.navbar-r2-main-links-a
+                        li Программы
+                        != partial("./navbar-menu")
+
+                    ul.navbar-r2-main-links-a
+                        li Проживание
+                        != partial("./navbar-menu")
+                    ul.navbar-r2-main-links-a
+                        li Прокат
+                        != partial("./navbar-menu")
+                    ul.navbar-r2-main-links-a
+                        li Наш мерч
+                        != partial("./navbar-menu")
+                    ul.navbar-r2-main-links-a
+                        li Еда на вынос
+                        != partial("./navbar-menu")
+                    .navbar-r2-main-links-a-kfcclub Клуб KFC
+
+                    //.navbar-r2-main-links-a-kfcclub.navbar-r2-main-links-a-kfcclub-active Клуб KFC
+                    // KFC КЛУБ - АКТИВНЫЙ
+
+                .navbar-r2-main-profile
+                    img.navbar-r2-main-signin-ico(src="./img/icon/signin.svg")
+                    a(href="#").navbar-r2-main-signin-a Войти
+
+                //.navbar-r2-main-profile.navbar-r2-main-profile-aut
+                //    img.navbar-r2-main-signin-ico(src="./img/icon/signin.svg")
+                //    .navbar-r2-main-profile-name Марина Ковпак
+                //    .navbar-r2-main-profile-bonus у вас 6500 бонусов
+
+                // Профиль залогиненный
+

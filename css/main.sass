@@ -1,2 +1,20 @@
 @import "./lib/reset.css"
-@import "./_modules/example"
+@import "_modules/vars"
+@import "_modules/devpage"
+@import "_modules/navbar"
+
+*
+  box-sizing: border-box
+  text-decoration: none
+
+.wrapper
+  max-width: 1400px
+  width: 100%
+  height: 100%
+  margin-left: auto
+  margin-right: auto
+  padding-left: 128px
+  padding-right: 128px
+  @media screen and (max-width: $laptop)
+    padding-left: 21px
+    padding-right: 21px
