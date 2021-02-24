@@ -1,0 +1,91 @@
+.mp-header
+  background-image: url("./../../img/photo/mp-header.png")
+  background-repeat: no-repeat
+  background-position-x: center
+  background-size: cover
+  width: 100%
+  height: 418px
+  margin-bottom: 41px
+  position: relative
+  @media screen and (max-width: $tablet)
+    margin-bottom: 0
+    height: 357px
+
+.mp-header-shadow
+  width: 100%
+  height: 100%
+  position: relative
+  @media screen and (max-width: $tablet)
+    background: rgba(255, 255, 255, 0.8)
+.mp-header-container
+  max-width: 1144px
+  width: 100%
+  height: 146px
+  background: $white
+  position: absolute
+  left: calc((100% - 1144px)/2)
+  right: calc((100% - 1144px)/2)
+  bottom: -41px
+  box-shadow: 0px 4px 10px rgba(186, 190, 202, 0.3)
+  border-radius: 10px
+  display: flex
+  flex-direction: column
+  align-items: center
+  @media screen and (max-width: $laptop)
+    width: unset
+    left: 21px
+    right: 21px
+  @media screen and (max-width: $tablet)
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background: none
+    box-shadow: none
+
+.mp-header-container-h
+  font-weight: 500
+  font-size: 32px
+  margin-top: 21px
+  color: $black
+  @media screen and (max-width: $tablet)
+    margin-top: 40px
+    font-size: 20px
+    margin-bottom: 48px
+  @media screen and (max-width: $phone)
+    width: 278px
+    text-align: left
+    margin-left: auto
+    margin-right: auto
+.mp-header-container-form
+  width: 100%
+  padding-left: 32px
+  padding-right: 32px
+  margin-top: 20px
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  @media screen and (max-width: $tablet)
+    flex-direction: column
+.mp-header-container-form-select
+  width: 21%
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  padding-bottom: 4px
+  border-bottom: 1px solid #F5F6FA
+  @media screen and (max-width: $tablet)
+    width: 278px
+    margin-bottom: 28px
+
+.mp-header-container-form-select-label
+  font-weight: 500
+  font-size: 15px
+
+.mp-header-container-form-button.bluebutton
+  margin-left: 30px
+  @media screen and (max-width: $tablet)
+    width: 278px
+    margin-left: 0
