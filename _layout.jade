@@ -5,4 +5,7 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel="stylesheet" href="./css/main.css")
   body
-    != yield
+    != partial("/_tmp/navbar")
+    .page-wrapper
+      != yield
+      != partial("/_tmp/footer")

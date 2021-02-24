@@ -1,0 +1,219 @@
+.footer
+  background: $gray
+  padding-top: 36px
+  @media screen and (max-width: $phone)
+    padding-top: 24px
+    .wrapper
+      padding-left: 36px
+      padding-right: 36px
+
+.footer-advantages
+  display: flex
+  flex-direction: row
+  align-items: center
+  background: $white
+  box-shadow: 0px 4px 10px #F5F6FA
+  border-radius: 10px
+  height: 53px
+  justify-content: space-between
+  @media screen and (max-width: $tablet)
+    display: none
+
+.footer-advantages-element
+  display: flex
+  flex-direction: row
+  align-items: center
+  padding-left: 36px
+  padding-right: 36px
+
+.footer-advantages-element:last-child
+  margin-right: 56px
+
+.footer-advantages-element-text
+  font-style: normal
+  font-weight: 500
+  font-size: 15px
+  margin-left: 12px
+
+.footer-main
+  padding-top: 42px
+  display: grid
+  grid-template-rows: 1fr 1fr 64px
+  grid-template-areas: ". . . . ." ". . email email ." ". . . regn regn"
+  grid-row-gap: 48px
+  @media screen and (max-width: $tablet)
+    grid-template-areas: ". . contacts contacts" ". . contacts contacts" ". . contacts contacts" "email email media media" ". . regn ."
+    grid-template-columns: 2fr 3fr 2fr 2fr
+    grid-template-rows: 30px 30px 30px 80px 80px
+    gap: 0px 0px
+    padding-top: 0
+  @media screen and (max-width: $phone)
+      grid-template-areas: ". ." ". ." ". ." "contacts contacts" "email email" "media media" ". ." "regn ."
+      grid-template-columns: 3fr 2fr
+      grid-template-rows: 28px 28px 28px 110px 170px 90px 80px
+.footer-main-list
+  display: flex
+  width: fit-content
+  flex-direction: column
+  @media screen and (max-width: $tablet)
+    //height: 40px
+.footer-main-list.footer-main-list-mail
+  grid-area: email
+  @media screen and (max-width: $tablet)
+    padding-top: 12px
+  @media screen and (max-width: $phone)
+    width: 100%
+
+.footer-main-list-h
+  font-style: normal
+  font-weight: 500
+  font-size: 10px
+  color: $black
+  margin-bottom: 22px
+  text-transform: uppercase
+  max-width: 150px
+  @media screen and (max-width: $tablet)
+    margin-bottom: 16px
+    max-width: 134px
+  @media screen and (max-width: $phone)
+    margin-bottom: 4px
+.footer-main-list-p
+  font-style: normal
+  font-weight: 300
+  font-size: 15px
+  margin-bottom: 8px
+  color: $black
+  @media screen and (max-width: $tablet)
+    display: none
+  @media screen and (max-width: $phone)
+    margin-bottom: 0
+
+.footer-main-list-mail-form
+  width: 344px
+  background: #FFFFFF
+  height: 34px
+  border-radius: 30px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-top: 8px
+  @media screen and (max-width: $tablet)
+    width: 45vw
+    margin-top: 0
+  @media screen and (max-width: $phone)
+    flex-direction: column
+    width: 100%
+    background: none
+.footer-main-list-mail-form-el
+
+  height: 100%
+  border: none
+  outline: none
+  margin-left: 16px
+  @media screen and (max-width: $tablet)
+    width: 100px
+  @media screen and (max-width: $phone)
+    padding-bottom: 14px
+    padding-top: 10px
+    width: 100%
+    margin-left: 0
+    text-align: center
+    border-radius: 30px
+    margin-top: 21px
+.footer-main-list-mail-form-el::placeholder
+  font-style: normal
+  font-weight: 500
+  color: #BABECA
+  font-size: 15px
+  @media screen and (max-width: $phone)
+    font-size: 12px
+.footer-main-list-mail-form-button
+  width: 104px
+  height: 100%
+  font-style: normal
+  font-weight: 500
+  font-size: 10px
+  color: $white
+  background: #469EDC
+  border-radius: 30px
+  border: none
+  outline: none
+  @media screen and (max-width: $phone)
+    height: 34px
+    width: 100%
+    margin-top: 8px
+    padding-bottom: 14px
+    padding-top: 10px
+.footer-main-list-contacts-el
+  margin-top: 20px
+  grid-area: contactsmedia
+  img
+    margin-right: 10px
+
+.footer-main-list-contacts
+  .footer-main-list-p
+    @media screen and (max-width: $tablet)
+      display: block
+      font-size: 12px
+      margin-top: -8px
+  @media screen and (max-width: $tablet)
+    width: auto
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-areas: ". contactsmedia" ". contactsmedia" ". contactsmedia"
+  @media screen and (max-width: $phone)
+    padding-top: 16px
+  .footer-main-list-contacts-el
+    @media screen and (max-width: $tablet)
+      margin-top: 28px
+      margin-left: 26px
+
+.footer-main-list-media
+  .footer-main-list-contacts-el
+    margin-top: 28px
+    @media screen and (max-width: $tablet)
+      margin-top: 10px
+      img
+        margin-right: 4.5vw
+    @media screen and (max-width: $phone)
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      padding-left: 16px
+      padding-right: 10px
+      margin-top: 24px
+      img
+        margin-right: 0
+  @media screen and (max-width: $phone)
+    width: 100%
+
+.footer-main-list-regn
+  grid-area: regn
+  width: 100%
+  .footer-main-list-bottom
+    width: 100%
+    margin-left: auto
+    text-align: right
+    @media screen and (max-width: $tablet)
+      text-align: left
+      margin-left: 0
+
+
+.footer-main-list-bottom
+  font-style: normal
+  font-weight: normal
+  font-size: 12px
+  color: #BABECA
+  @media screen and (max-width: $tablet)
+    max-width: 125px
+    font-size: 10px
+    margin-top: auto
+    height: 60px
+
+@media screen and (max-width: $tablet)
+  .footer-main-list-media
+    grid-area: media
+  .footer-main-list-mail
+    grid-area: email
+  .footer-main-list-contacts
+    grid-area: contacts
