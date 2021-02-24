@@ -6,6 +6,7 @@
 @import "_modules/mp-header"
 @import "_modules/program-card"
 @import "_modules/mp-programs"
+@import "_modules/mp-blog"
 
 
 *
@@ -42,8 +43,12 @@
   padding-bottom: 14px
   padding-top: 13px
   text-align: center
+  @media screen and (max-width: $tablet)
+    width: 278px
 
 .blueheading
   font-weight: 800
   font-size: 32px
   color: #469EDC
+  @media screen and (max-width: $tablet)
+    font-size: 22px

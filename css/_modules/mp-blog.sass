@@ -1,0 +1,68 @@
+.mp-blog
+  @media screen and (max-width: $tablet)
+    .wrapper
+      padding-left: 0
+      padding-right: 0
+      .mp-blog-heading
+        margin-left: 21px
+.mp-blog-container
+  margin-top: 48px
+  @media screen and (max-width: $tablet)
+    margin-top: 32px
+
+
+.mp-blog-container-slide
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-template-rows: repeat(2, 258px)
+  grid-template-areas: ". center ." ". center ."
+  gap: 34px 34px
+  @media screen and (max-width: $tablet)
+    gap: 11px
+
+.mp-blog-container-slide
+  .program-card:first-child
+    grid-area: center
+    .program-card-gradient
+      justify-content: flex-end
+      @media screen and (max-width: $tablet)
+        justify-content: space-between
+      .program-card-info-subtitle
+        margin-bottom: 56px
+        @media screen and (max-width: $tablet)
+          margin-top: 12px
+          margin-bottom: 0
+      .program-card-info-title
+        @media screen and (max-width: $tablet)
+          margin-bottom: 0
+        margin-bottom: 24px
+  @media screen and (max-width: $tablet)
+    display: flex
+    overflow-x: scroll
+    width: 100%
+    margin-top: 32px
+    -ms-overflow-style: none
+    scrollbar-width: none
+    .program-card
+      display: inline-block
+      width: 251px !important
+      height: 369px !important
+      flex-shrink: 0
+    .program-card:first-child
+      margin-left: 21px
+  .program-card
+    height: 100%
+    width: 100%
+
+
+.mp-blog-container-slide::-webkit-scrollbar
+  display: none
+
+.mp-blog-button
+  display: none
+  @media screen and (max-width: $tablet)
+    display: block
+    margin-top: 24px
+    width: fit-content
+    margin-left: auto
+    margin-right: auto
