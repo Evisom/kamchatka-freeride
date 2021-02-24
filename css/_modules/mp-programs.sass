@@ -1,0 +1,53 @@
+.blueheading.mp-programs-heading
+  margin-top: 96px
+  @media screen and (max-width: $tablet)
+    margin-left: 21px
+    margin-top: 24px
+    font-size: 22px
+
+.mp-programs
+  .wrapper
+    @media screen and (max-width: $tablet)
+      padding-right: 0
+      padding-left: 0
+
+.mp-programs-container
+  margin-top: 48px
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-column-gap: 12px
+  grid-row-gap: 12px
+  .program-card
+    width: 100%
+  @media screen and (max-width: $tablet)
+    display: flex
+    overflow-x: scroll
+    width: 100%
+    margin-top: 32px
+    -ms-overflow-style: none
+    scrollbar-width: none
+    .program-card
+      display: inline-block
+      width: 251px
+      flex-shrink: 0
+    .program-card:first-child
+      margin-left: 21px
+
+.mp-programs-container::-webkit-scrollbar
+  display: none
+
+.mp-programs-button.bluebutton
+  width: fit-content
+  margin-top: 48px
+  margin-right: auto
+  margin-left: auto
+  @media screen and (max-width: $tablet)
+    margin-top: 32px
+  @media screen and (max-width: $phone)
+    margin-top: 24px
+    width: calc(100% - 42px)
+    padding-left: 0
+    padding-right: 0
+    font-size: 14px
+    padding-bottom: 18px
+    padding-top: 16px
