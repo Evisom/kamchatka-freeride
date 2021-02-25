@@ -1,0 +1,108 @@
+.mp-reviews
+  margin-top: 96px
+  .blueheading
+    max-width: 410px
+  .slider-container
+    display: flex
+    overflow-x: scroll
+    width: 100%
+    margin-top: 32px
+    -ms-overflow-style: none
+    scrollbar-width: none
+.slider-container::-webkit-scrollbar
+  display: none
+.mp-reviews-slider-element
+  margin-top: 10px
+  margin-bottom: 10px
+  width: 632px
+  height: 296px
+  background: #FFFFFF
+  box-shadow: 0px 4px 10px rgba(186, 190, 202, 0.3)
+  border-radius: 5px
+  padding: 30px
+  display: flex
+  flex-direction: row
+  flex-shrink: 0
+  margin-right: 24px
+  @media screen and (max-width: $tablet)
+    width: 423px
+    height: 305px
+    flex-direction: column
+    padding-top: 20px
+    padding-left: 16px
+    padding-right: 16px
+    padding-bottom: 16px
+  @media screen and (max-width: $phone)
+    width: 251px
+    height: 406px
+.mp-reviews-slider-element:first-child
+  @media screen and (min-width: 1400px )
+    margin-left: calc((100% - 1145px )/ 2)
+  margin-left: 128px
+  @media screen and (max-width: $laptop)
+    margin-left: 21px
+.mp-reviews-slider-element-c1
+  width: 200px
+  flex-shrink: 0
+  img
+    border-radius: 50%
+    margin-bottom: 27px
+  @media screen and (max-width: $tablet)
+    flex-direction: row
+    display: flex
+    width: 100%
+    height: 80px
+    img
+      height: 60px
+      width: 60px
+      margin-right: 21px
+  @media screen and (max-width: $phone)
+    margin-bottom: 8px
+    img
+      margin-right: 12px
+.mp-reviews-slider-element-c1-tag
+  margin-top: 8px
+  color: #469EDC
+  font-weight: 500
+  font-size: 10px
+  padding-top: 7px
+  padding-bottom: 8px
+  padding-left: 10px
+  padding-right: 10px
+  border: 1px solid #469EDC
+  border-radius: 30px
+  width: fit-content
+  margin-left: 6px
+  @media screen and (max-width: $tablet)
+    height: fit-content
+    margin-top: 0
+    width: fit-content
+    display: inline-block
+    margin-bottom: 6px
+    white-space: nowrap
+
+.mp-reviews-slider-element-c2-p:first-child
+  margin-top: 0
+.mp-reviews-slider-element-c2-p
+  font-size: 15px
+  margin-top: 26px
+  line-height: 20px
+  max-width: 270px
+  @media screen and (max-width: $tablet)
+    margin-top: 10px
+    max-width: 383px
+  @media screen and (max-width: $phone)
+    max-width: 280px
+    margin-top: 16px
+    word-break: break-word
+
+.mp-reviews
+  @media screen and (max-width: $tablet)
+    margin-top: 68px
+  @media screen and (max-width: $phone)
+    margin-top: 48px
+    .blueheading
+      max-width: 251px
+  .slider-container
+    @media screen and (max-width: $tablet)
+      margin-top: 24px
