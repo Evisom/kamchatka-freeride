@@ -1,0 +1,73 @@
+.mp-kfcclub
+  background: linear-gradient(180deg, rgba(70, 158, 220, 0.2) 0%, rgba(70, 158, 220, 0.2) 100%)
+  width: 100%
+  height: 209px
+  margin-top: 64px
+  @media screen and (max-width: $tablet)
+    height: 186px
+  @media screen and (max-width: $phone)
+    height: 355px
+
+.mp-kfcclub-svgbg
+  background-image: url("./../img/photo/kfcclubbg.svg")
+  width: 100%
+  height: 100%
+  background-repeat: no-repeat
+  background-position: center
+  position: relative
+  @media screen and (max-width: $tablet)
+    background-position: unset
+
+.mp-kfcclub-list
+  list-style: none
+  margin-left: 141px
+  @media screen and (max-width: $tablet)
+    margin-left: 93px
+  @media screen and (max-width: $phone)
+    margin-left: 16px
+    margin-right: 16px
+
+.mp-kfcclub-list-h
+  font-weight: 500
+  font-size: 32px
+  line-height: 40px
+  color: $black
+  padding-top: 45px
+  @media screen and (max-width: $tablet)
+    font-size: 20px
+    line-height: 24px
+    padding-top: 55px
+  @media screen and (max-width: $phone)
+    padding-top: 118px
+
+.mp-kfcclub-list-li
+  font-weight: 500
+  font-size: 32px
+  line-height: 40px
+  color: $black
+  margin-left: 32px
+  @media screen and (max-width: $tablet)
+    font-size: 20px
+    line-height: 24px
+
+.mp-kfcclub-list-li::before
+  content: "\2022"
+  color: white
+  font-weight: bold
+  display: inline-block
+  width: 1em
+  margin-left: -1em
+
+.mp-kfcclub-seemore
+  position: absolute
+  right: 52px
+  bottom: 52px
+  font-weight: 500
+  font-size: 20px
+  color: $black
+  @media screen and (max-width: $tablet)
+    bottom: 24px
+    right: 24px
+    font-size: 15px
+  svg
+    margin-left: 12px
