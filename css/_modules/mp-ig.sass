@@ -1,0 +1,49 @@
+.mp-ig
+  text-align: center
+  padding-top: 64px
+  @media screen and (max-width: $tablet)
+    padding-top: 48px
+
+.mp-ig-h
+  display: flex
+  flex-direction: row
+  font-weight: 500
+  font-size: 32px
+  line-height: 32px
+  color: $black
+  justify-content: center
+  @media screen and (max-width: $tablet)
+    flex-direction: column
+    font-size: 22px
+    line-height: 24px
+
+.mp-ig-h-hashtag
+  color: #FF7B47
+  margin-left: 8px
+
+.mp-ig-link
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+  margin-top: 25px
+  img
+    margin-left: 12px
+
+.mp-ig-grid
+  display: grid
+  margin-top: 27px
+  grid-template-columns: repeat(3 , 1fr)
+  grid-auto-rows: fit-content(100%)
+  height: 745px
+  grid-column-gap: 24px
+  @media screen and (max-width: $tablet)
+    grid-column-gap: 16px
+  @media screen and (max-width: $phone)
+    grid-template-columns: repeat(2 , 1fr)
+
+.mp-ig-grid-photo
+  width: 100%
+  height: auto
+  margin-bottom: 24px
+  @media screen and (max-width: $tablet)
+    margin-bottom: 16px
