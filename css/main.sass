@@ -6,6 +6,7 @@
 @import "_modules/mp-header"
 @import "_modules/program-card"
 @import "_modules/mp-programs"
+@import "_modules/mp-movies"
 @import "_modules/mp-blog"
 
 
@@ -52,3 +53,31 @@
   color: #469EDC
   @media screen and (max-width: $tablet)
     font-size: 22px
+
+.slider-heading
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: baseline
+
+.slider-heading-controls
+  width: 86px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  @media screen and (max-width: $tablet)
+    margin-right: 21px
+    display: none
+
+  button
+    background: none
+    outline: none
+    border: none
+    padding: 0
+  button:first-child
+    transform: rotate(180deg)
+
+.slider-container
+  margin-top: 48px
+  @media screen and (max-width: $tablet)
+    margin-top: 32px

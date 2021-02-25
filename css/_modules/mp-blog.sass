@@ -1,15 +1,13 @@
 .mp-blog
+  .blueheading
+    margin-top: 81px
   @media screen and (max-width: $tablet)
     .wrapper
       padding-left: 0
       padding-right: 0
-      .mp-blog-heading
+      .blueheading
         margin-left: 21px
-.mp-blog-container
-  margin-top: 48px
-  @media screen and (max-width: $tablet)
-    margin-top: 32px
-
+        margin-top: 48px
 
 .mp-blog-container-slide
   display: grid
@@ -18,7 +16,7 @@
   grid-template-areas: ". center ." ". center ."
   gap: 34px 34px
   @media screen and (max-width: $tablet)
-    gap: 11px
+    gap: 0
 
 .mp-blog-container-slide
   .program-card:first-child
@@ -48,6 +46,7 @@
       width: 251px !important
       height: 369px !important
       flex-shrink: 0
+      margin-right: 11px
     .program-card:first-child
       margin-left: 21px
   .program-card

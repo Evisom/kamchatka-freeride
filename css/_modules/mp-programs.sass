@@ -1,4 +1,4 @@
-.blueheading.mp-programs-heading
+.mp-programs .blueheading
   margin-top: 96px
   @media screen and (max-width: $tablet)
     margin-left: 21px
@@ -12,11 +12,9 @@
       padding-left: 0
 
 .mp-programs-container
-  margin-top: 48px
   display: grid
   grid-template-columns: repeat(4, 1fr)
-  grid-column-gap: 12px
-  grid-row-gap: 12px
+  gap: 12px 12px
   .program-card
     width: 100%
   @media screen and (max-width: $tablet)
@@ -26,10 +24,12 @@
     margin-top: 32px
     -ms-overflow-style: none
     scrollbar-width: none
+    gap: 0
     .program-card
       display: inline-block
       width: 251px
       flex-shrink: 0
+      margin-right: 11px
     .program-card:first-child
       margin-left: 21px
 
