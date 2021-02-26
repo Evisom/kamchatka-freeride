@@ -1,0 +1,205 @@
+.program
+  width: 100%
+  display: grid
+  grid-template-columns: auto 328px
+  grid-column-gap: 48px
+  @media screen and (max-width: $tablet)
+    grid-template-columns: 1fr
+
+.wrapper.program-wrapper
+  @media screen and (max-width: $tablet)
+    position: relative
+
+.program-sidebar
+  width: 100%
+  height: 535px
+  box-shadow: 0px 4px 10px rgba(186, 190, 202, 0.5)
+  border-radius: 5px
+  display: flex
+  flex-direction: column
+  padding-top: 20px
+  padding-left: 22px
+  padding-right: 22px
+  padding-bottom: 20px
+  @media screen and (max-width: $tablet)
+    display: none
+  .blueheading
+    font-size: 22px
+    width: 230px
+    line-height: 24px
+  .bluebutton
+    margin-top: 21px
+
+.program-sidebar-st
+  margin-top: 8px
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+  color: #BABECA
+  padding-bottom: 5px
+  border-bottom: 1px solid #F5F6FA
+  padding-right: 48px
+
+.program-sidebar-wlabel
+  font-size: 15px
+  line-height: 15px
+  margin-top: 24px
+  color: $black
+
+.program-sidebar-select
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  border-bottom: 1px solid #F5F6FA
+  padding-bottom: 4px
+  margin-top: 16px
+
+.program-sidebar-select-text
+  font-size: 13px
+  line-height: 20px
+  color: $black
+
+.program-sidebar-c
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.program-sidebar-c-r
+  width: 128px
+
+.program-sidebar-c-r-label
+  font-weight: 500
+  font-size: 15px
+  line-height: 18px
+  margin-top: 22px
+  width: 100px
+
+.program-sidebar-c-r-input
+  width: 100%
+  outline: none
+  border-left: none
+  border-right: none
+  border-top: none
+  margin-top: 15px
+  border-bottom: 1px solid #F5F6FA
+
+.program-sidebar-price
+  font-weight: 500
+  font-size: 32px
+  line-height: 32px
+  margin-top: 30px
+
+.program-sidebar-bonus
+  font-size: 15px
+  margin-top: 6px
+  color: #BABECA
+  svg
+    margin-bottom: 6px
+    margin-left: 2px
+
+.program-sidebar-info
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+  margin-top: 14px
+
+
+.program-header
+  background-image: url("./../img/photo/program-header.png")
+  border-radius: 5px
+  width: 100%
+  height: 420px
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  margin-bottom: 24px
+  @media screen and (max-width: $tablet)
+    position: absolute
+    left: 0
+    right: 0
+    border-radius: 0
+    height: 357px
+  @media screen and (max-width: $phone)
+    height: 201px
+.program-header-filter
+  background: rgba(33, 41, 70, 0.6)
+  border-radius: 5px
+  width: 100%
+  height: 100%
+  padding-top: 60px
+  padding-left: 60px
+  padding-right: 60px
+  padding-bottom: 40px
+  @media screen and (max-width: $tablet)
+    border-radius: 0
+    padding-left: 21px
+    padding-right: 21px
+  @media screen and (max-width: $phone)
+    padding-top: 40px
+    padding-left: 21px
+    padding-right: 21px
+
+.program-header-info
+  display: flex
+  flex-direction: row
+  margin-top: 100px
+  justify-content: space-between
+  @media screen and (max-width: $tablet)
+    margin-top: 48px
+
+  @media screen and (max-width: $phone)
+    display: grid
+    grid-template-columns: 100px 100px
+    svg
+      path
+        fill: black
+
+
+.program-header-h
+  font-weight: 800
+  font-size: 32px
+  line-height: 32px
+  color: #FFFFFF
+  width: 300px
+  @media screen and (max-width: $phone)
+    font-size: 26px
+    width: 260px
+    padding-left: 15px
+
+.program-header-p
+  font-weight: 500
+  font-size: 20px
+  line-height: 24px
+  color: #FFFFFF
+  margin-top: 16px
+  width: 350px
+  @media screen and (max-width: $phone)
+    font-size: 15px
+    width: 230px
+    margin-top: 24px
+    padding-left: 15px
+
+.program-header-info-text
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+  color: #FFFFFF
+  margin-top: 10px
+  @media screen and (max-width: $phone)
+    color: $black
+    width: 100px
+    margin-bottom: 20px
+
+.program-p
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+  color: $black
+  padding-top: 24px
+
+.program-p-f
+  @media screen and (max-width: $tablet)
+    margin-top: 357px
+  @media screen and (max-width: $phone)
+    margin-top: 416px
