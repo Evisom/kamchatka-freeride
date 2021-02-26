@@ -1,0 +1,133 @@
+.program-calculator
+  background: #FFFFFF
+  height: 728px
+  width: 100%
+  margin-top: 48px
+  box-shadow: 0px 4px 10px rgba(186, 190, 202, 0.5)
+  border-radius: 5px
+.program-calculator-grid
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 2fr
+  grid-template-rows: 40px 50px 120px 120px 86px
+  grid-column-gap: 45px
+  grid-template-areas: "title title title title" "subtitle subtitle subtitle subtitle" "date date persons total" "type type rent total" "info info info info"
+
+
+  padding-top: 32px
+  padding-right: 32px
+  padding-left: 24px
+  padding-bottom: 24px
+  @media screen and (max-width: $tablet)
+    grid-template-areas: "title title title title" "subtitle subtitle subtitle subtitle" "date date persons persons" "type type rent rent" "info info total total"
+  @media screen and (max-width: $phone)
+    grid-template-columns: 1fr
+    grid-template-rows: repeat(8, 1fr)
+    grid-template-areas: "title" "subtitle" "info" "date" "type" "persons" "rent" "total"
+.program-calculator-grid-title
+  grid-area: title
+  font-weight: 800
+  font-size: 32px
+  line-height: 32px
+  color: #469EDC
+
+.program-calculator-grid-subtitle
+  grid-area: subtitle
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+
+.program-calculator-grid-date
+  grid-area: date
+  .program-sidebar-wlabel
+    margin-top: 24px
+  .program-sidebar-select
+    margin-top: 25px
+
+.program-calculator-grid-persons
+  grid-area: persons
+  .program-sidebar-c-r-input
+    margin-top: 4px
+
+.program-calculator-grid-type
+  grid-area: type
+  .program-sidebar-wlabel
+    margin-top: 24px
+  .program-sidebar-select
+    margin-top: 25px
+
+.program-calculator-grid-rent
+  grid-area: rent
+  .program-calculator-grid-rent-label
+    font-weight: 500
+    width: 100px
+    margin-bottom: 12px
+    font-size: 15px
+    margin-top: 25px
+  .program-calculator-grid-rent-select-radio
+    margin-right: 8px
+    label
+      margin-left: 8px
+      font-size: 15px
+      line-height: 20px
+      margin-right: 6px
+  .program-calculator-grid-rent-select
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-top: 16px
+.program-calculator-grid-total
+  grid-area: total
+  .program-sidebar-info
+    font-size: 10px
+    margin-bottom: 36px
+    line-height: 14px
+
+.program-calculator-grid-info
+  grid-area: info
+  .program-calculator-grid-info-cell-key
+    font-size: 13px
+    line-height: 15px
+  .program-calculator-grid-info-cell-value
+    font-size: 13px
+    line-height: 15px
+
+.program-calculator-grid-info
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+
+.program-calculator-lists
+  padding-top: 48px
+  padding-left: 24px
+  padding-right: 24px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  width: 100%
+  height: inherit
+  background: #F5F6FA
+  border-radius: 0px 0px 5px 5px
+
+.program-calculator-lists-list-ul
+  flex-grow: 1
+  //list-style: disc
+  margin-left: 4px
+
+.program-calculator-lists-list-ul-li::before
+  content: '\2022 '
+  color: black
+  width: 4px
+  height: 4px
+
+.program-calculator-lists-list-ul-li
+  font-weight: 300
+  font-size: 15px
+  line-height: 15px
+
+.program-calculator-lists-list-h
+  font-weight: 500
+  font-size: 20px
+  line-height: 24px
+  margin-bottom: 22px
