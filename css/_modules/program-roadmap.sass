@@ -1,0 +1,123 @@
+.program-roadmap
+  padding-top: 96px
+  @media screen and (max-width: $tablet)
+    padding-top: 48px
+
+.program-roadmap-grid
+  display: flex
+  flex-direction: column
+  margin-top: 48px
+  @media screen and (max-width: $tablet)
+    margin-top: 25px
+
+.program-roadmap-grid-hr
+  display: flex
+  flex-direction: row
+  align-items: center
+
+.program-roadmap-grid-r
+  display: flex
+  flex-direction: row
+  margin-top: 28px
+  margin-bottom: 24px
+  @media screen and (max-width: $tablet)
+    display: none
+    margin-top: 24px
+    margin-bottom: 0
+  @media screen and (max-width: $phone)
+    margin-top: 8px
+
+
+.program-roadmap-grid-hr-day
+  width: 75px
+  background: #469EDC
+  border-radius: 30px
+  text-transform: uppercase
+  font-size: 10px
+  line-height: 14px
+  color: white
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 24px
+  @media screen and (max-width: $tablet)
+    background: none
+    width: fit-content
+    color: $black
+    font-weight: 500
+    font-size: 15px
+    line-height: 20px
+    text-transform: none
+.program-roadmap-grid-r-border
+  width: 75px
+  flex-shrink: 0
+  @media screen and (max-width: $tablet)
+    width: 0
+
+.program-roadmap-grid-r-border-vr
+    width: 1px
+    height: 100%
+    background:  #BABECA
+    margin:  0 auto
+    @media screen and (max-width: $tablet)
+      display: none
+
+.program-roadmap-grid-r-text
+  padding-bottom: 36px
+  margin-left: 49px
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+  @media screen and (max-width: $tablet)
+    margin-left: 0
+    font-style: normal
+    font-weight: 300
+    font-size: 15px
+    line-height: 20px
+    color: #212946
+    padding-bottom: 0
+
+
+.program-roadmap-grid-hr-title
+  margin-left: 49px
+  font-weight: 500
+  font-size: 20px
+  line-height: 24px
+  @media screen and (max-width: $tablet)
+    margin-left: 4px
+    color: $black
+    font-weight: 500
+    font-size: 15px
+    line-height: 20px
+.program-roadmap-grid-block:last-child
+  .program-roadmap-grid-r-border
+    .program-roadmap-grid-r-border-vr
+      display: none
+
+.program-roadmap-grid-block
+  @media screen and (max-width: $tablet)
+    background: #F5F6FA
+    border-radius: 5px
+    margin-bottom: 12px
+    padding-left: 16px
+    padding-top: 12px
+    padding-right: 16px
+    padding-bottom: 16px
+    position: relative
+
+.program-roadmap-grid-plus
+  display: none
+  @media screen and (max-width: $tablet)
+    display: block
+    position: absolute
+    right: 24px
+    top: 16px
+  @media screen and (max-width: $phone)
+    right: 12px
+.program-roadmap-grid-block-active
+  .program-roadmap-grid-plus
+    top: 23px
+  path
+    d: path('M0.870605 0.970703C0.870605 0.694561 1.09446 0.470703 1.37061 0.470703L16.5706 0.470703C16.8467 0.470703 17.0706 0.694561 17.0706 0.970703C17.0706 1.24685 16.8467 1.4707 16.5706 1.4707L1.37061 1.4707C1.09446 1.4707 0.870605 1.24685 0.870605 0.970703Z')
+  .program-roadmap-grid-r
+    display: flex
