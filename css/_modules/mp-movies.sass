@@ -41,6 +41,8 @@
   @media screen and (max-width: $laptop)
     margin-left: 21px
 .mp-movies-slide-gradient
+  display: flex
+  flex-direction: column
   background: rgba(33, 41, 70, 0.6)
   border-radius: 5px
   width: 100%
@@ -71,7 +73,6 @@
   line-height: 20px
   color: $white
   margin-top: 16px
-  margin-bottom: 86px
   @media screen and (max-width: $tablet)
     font-size: 15px
     margin-top: 24px
@@ -94,11 +95,14 @@
   width: fit-content
 
 .mp-moviews-slide-a
-  margin-left: 460px
   font-weight: 500
   font-size: 15px
   color: #FF7B47
-  text-align: right
+  display: flex
+  justify-content: flex-end
+  flex-grow: 1
+  display: flex
+  align-items: flex-end
   img
     margin-left: 16px
   @media screen and (max-width: $tablet)
