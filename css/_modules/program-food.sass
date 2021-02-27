@@ -1,0 +1,97 @@
+.program-food
+  @media screen and (max-width: $tablet)
+    margin-top: 48px
+
+.program-food-container
+  box-shadow: 0px 4px 10px rgba(186, 190, 202, 0.5)
+  border-radius: 5px
+  margin-top: 48px
+  width: 98%
+  margin-left: auto
+  margin-right: auto
+  height: fit-content
+  padding: 22px
+  position: relative
+  margin-bottom: 4px
+  @media screen and (max-width: $tablet)
+    padding: 0
+    box-shadow: none
+    margin-top: 21px
+    width: 100%
+
+.program-food-container-element-title
+  background: #F5F6FA
+  border-radius: 5px
+  height: 54px
+  display: flex
+  align-items: center
+  font-weight: 500
+  font-size: 20px
+  line-height: 24px
+  padding-left: 16px
+  position: relative
+
+.program-food-container-element-text
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+  margin-left: 16px
+  margin-top: 16px
+  margin-bottom: 44px
+
+.program-food-container-element-title-plus
+  position: absolute
+  display: none
+  @media screen and (max-width: $tablet)
+    display: block
+    right: 21px
+    top: 16px
+
+
+.program-food-container-element
+  @media screen and (max-width: $tablet)
+    margin-bottom: 8px
+
+.program-food-container-element-text
+  @media screen and (max-width: $tablet)
+    display: none
+
+@media screen and (max-width: $tablet)
+  .program-food-container-element-active
+    background: #F5F6FA
+    border-radius: 5px
+    padding-bottom: 1px
+    .program-food-container-element-title-plus
+      top: 25px
+      path
+        d: path("M0.870605 0.970703C0.870605 0.694561 1.09446 0.470703 1.37061 0.470703L16.5706 0.470703C16.8467 0.470703 17.0706 0.694561 17.0706 0.970703C17.0706 1.24685 16.8467 1.4707 16.5706 1.4707L1.37061 1.4707C1.09446 1.4707 0.870605 1.24685 0.870605 0.970703Z")
+    .program-food-container-element-text
+      display: block
+
+
+
+.program-food-container-warning
+  display: flex
+  flex-direction: row
+  align-items: center
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+  color: #BABECA
+  svg
+    width: 20px
+    height: 20px
+    margin-top: 0px
+    margin-right: 18px
+    margin-left: 8px
+
+
+.program-food-photo
+  margin-top: 64px
+  width: 98%
+  margin-left: auto
+  margin-right: auto
+  text-align: center
+  height: auto
+  @media screen and (max-width: $tablet)
+    display: none
