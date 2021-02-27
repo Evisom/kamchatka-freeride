@@ -1,0 +1,81 @@
+.program-items
+  margin-top: 64px
+  @media screen and (max-width: $tablet)
+    margin-top: 48px
+  .slider-container
+    display: flex
+    flex-direction: row
+    overflow-x: scroll
+    @media screen and (max-width: $phone)
+      flex-direction: column
+
+
+.program-items-element
+  width: 98%
+  box-shadow: 0px 4px 10px rgba(186, 190, 202, 0.5)
+  border-radius: 5px
+  margin-left: 6px
+  padding: 32px
+  background-image: url("./../img/photo/items.svg")
+  background-repeat: no-repeat
+  background-position-x: 95%
+  background-position-y: 10%
+  flex-shrink: 0
+  margin-right: 12px
+  margin-top: 8px
+  margin-bottom: 8px
+  @media screen and (max-width: $tablet)
+    width: 80%
+  @media screen and (max-width: $phone)
+    width: 100%
+    margin-left: 0
+    margin-right: 0
+    margin-bottom: 6px
+    margin-top: 0
+    background-image: none
+    background: #F5F6FA
+    box-shadow: none
+    border-radius: 5px
+    padding: 16px
+    position: relative
+    .program-food-container-element-title-plus
+      top: 18px
+.program-items-element-title
+  font-weight: 500
+  font-size: 20px
+  line-height: 24px
+  @media screen and (max-width: $phone)
+    font-size: 15px
+
+.program-items-element-info
+  display: flex
+  flex-direction: row
+  margin-top: 36px
+  font-weight: 300
+  font-size: 15px
+  line-height: 15px
+  li
+    margin-bottom: 8px
+  @media screen and (max-width: $phone)
+    flex-direction: column
+    margin-top: 16px
+    display: none
+    font-size: 15px
+
+li.program-items-element-info-list-li::before
+  content: '\2022 '
+  padding-right: 8px
+
+.program-items-element-info-list
+  margin-right: 16px
+
+
+
+.program-items-element-active
+  @media screen and (max-width: $phone)
+    .program-items-element-info
+      display: flex
+    .program-food-container-element-title-plus
+      top: 25px
+      path
+        d: path("M0.870605 0.970703C0.870605 0.694561 1.09446 0.470703 1.37061 0.470703L16.5706 0.470703C16.8467 0.470703 17.0706 0.694561 17.0706 0.970703C17.0706 1.24685 16.8467 1.4707 16.5706 1.4707L1.37061 1.4707C1.09446 1.4707 0.870605 1.24685 0.870605 0.970703Z")
