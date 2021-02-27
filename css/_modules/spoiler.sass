@@ -1,0 +1,35 @@
+.spoiler
+  background: #F5F6FA
+  border-radius: 5px
+  padding: 16px
+  position: relative
+  margin-bottom: 12px
+
+.spoiler-title
+  font-weight: 500
+  font-size: 20px
+  line-height: 24px
+  @media screen and (max-width: $tablet)
+    font-size: 15px
+  svg
+    position: absolute
+    top: 21px
+    right: 30px
+
+.spoiler-body
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+  margin-top: 18px
+  display: none
+
+.spoiler-active
+  padding: 32px
+  margin-bottom: 24px
+  .spoiler-body
+    display: block
+  .spoiler-title
+    svg
+      top: 40px
+      path
+        d: path("M0.870605 0.970703C0.870605 0.694561 1.09446 0.470703 1.37061 0.470703L16.5706 0.470703C16.8467 0.470703 17.0706 0.694561 17.0706 0.970703C17.0706 1.24685 16.8467 1.4707 16.5706 1.4707L1.37061 1.4707C1.09446 1.4707 0.870605 1.24685 0.870605 0.970703Z")
