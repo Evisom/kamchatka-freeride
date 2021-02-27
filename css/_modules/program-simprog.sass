@@ -1,0 +1,117 @@
+.program-simprog
+  margin-top: 64px
+  margin-bottom: 48px
+  @media screen and (max-width: $tablet)
+    margin-top: 48px
+  .blueheading
+    max-width: 350px
+    @media screen and (max-width: $tablet)
+      max-width: 250px
+  .slider-container
+    display: flex
+    flex-direction: row
+    overflow-x: scroll
+
+.program-simprog-element
+  box-shadow: 0px 4px 10px rgba(186, 190, 202, 0.5)
+  border-radius: 5px
+  height: 542px
+  width: calc( ( 100% - 36px ) / 2 )
+  display: flex
+  flex-direction: column
+  position: relative
+  margin-top: 8px
+  margin-bottom: 8px
+  flex-shrink: 0
+  margin-right: 22px
+  margin-left: 4px
+  @media screen and (max-width: $tablet)
+    width: 251px
+    height: 489px
+    margin-right: 11px
+.program-simprog-element-photo
+  height: 244px
+  width: 100%
+  background-image: url("./../img/photo/simprog.png")
+  background-position: center
+  background-size: cover
+  border-radius: 5px 5px 0px 0px
+  @media screen and (max-width: $tablet)
+    height: 174px
+
+
+.program-simprog-element-title
+  font-weight: 500
+  font-size: 32px
+  line-height: 32px
+  height: 70px
+  margin-left: 22px
+  margin-top: 16px
+  margin-right: 22px
+  @media screen and (max-width: $tablet)
+    font-weight: 500
+    font-size: 22px
+    line-height: 28px
+    margin-left: 16px
+    margin-top: 16px
+    height: 52px
+.program-simprog-element-subtitle
+  font-size: 20px
+  line-height: 24px
+  margin-left: 22px
+  margin-right: 22px
+  @media screen and (max-width: $tablet)
+    font-size: 15px
+    line-height: 20px
+    margin-left: 16px
+    margin-top: 16px
+
+.program-simprog-element-info
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: end
+  padding-left: 22px
+  padding-right: 52px
+  padding-top: 25px
+  font-weight: 500
+  font-size: 15px
+  line-height: 18px
+  @media screen and (max-width: $tablet)
+    padding-left: 16px
+    padding-right: 16px
+.program-simprog-element-info-c-key
+  max-width: 120px
+  margin-bottom: 16px
+
+.program-simprog-element-seemore
+  font-weight: 500
+  font-size: 20px
+  line-height: 20px
+  color: #FF7B47
+  position: absolute
+  bottom: 10px
+  right: 10px
+  @media screen and (max-width: $tablet)
+    font-size: 15px
+    right: 16px
+    bottom: 16px
+  svg
+    margin-left: 8px
+.program-simprog-element-photo-price
+  color: #FFFFFF
+  position: absolute
+  top: 24px
+  left: 24px
+  font-weight: 500
+  font-size: 14px
+  line-height: 21px
+  background: #FF7B47
+  border-radius: 30px
+  padding-top: 4px
+  padding-bottom: 4px
+  padding-left: 12px
+  padding-right: 12px
+  @media screen and (max-width: $tablet)
+    top: 16px
+    left: 16px
