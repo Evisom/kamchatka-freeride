@@ -1,0 +1,92 @@
+.header
+  height: 456px
+  width: 100%
+  background-image: url("./../img/photo/house.png")
+  border-radius: 5px
+  @media screen and (max-width: $tablet)
+    border-radius: 0
+    height: 357px
+    background-size: cover
+  @media screen and (max-width: $phone)
+    height: 201px
+    margin-bottom: 200px
+
+.header-wrapper
+  @media screen and (max-width: $tablet)
+    width: 100%
+    max-width: unset
+    padding-left: 0 !important
+    padding-right: 0 !important
+
+.header-filter
+  width: 100%
+  height: 100%
+  padding-left: 100px
+  padding-right: 100px
+  padding-top: 50px
+  padding-bottom: 50px
+  background: rgba(33, 41, 70, 0.6)
+  border-radius: 5px
+  @media screen and (max-width: $tablet)
+    border-radius: 0
+    padding-left: 24px
+    padding-right: 24px
+    padding-top: 52px
+    padding-bottom: 52px
+  @media screen and (max-width: $phone)
+    padding-top: 32px
+    padding-left: 16px
+    padding-right: 16px
+    padding-bottom: 32px
+
+.header-features
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-top: 128px
+  @media screen and (max-width: $tablet)
+    margin-top: 52px
+  @media screen and (max-width: $phone)
+    display: grid
+    grid-template-columns: 130px 130px
+    margin-top: 72px
+    grid-row-gap: 21px
+
+.header-text1
+  font-weight: 500
+  font-size: 15px
+  color: white
+
+.header-text2
+  font-weight: 500
+  font-size: 32px
+  margin-top: 4px
+  color: white
+
+.header-text3
+  font-weight: 500
+  font-size: 15px
+  color: #FFFFFF
+  margin-top: 24px
+  max-width: 250px
+
+
+.header-features-element
+  @media screen and (max-width: $phone)
+    width: 130px
+
+.header-features-element-text
+  font-weight: 500
+  font-size: 15px
+  color: #FFFFFF
+  max-width: 136px
+  margin-top: 16px
+  @media screen and (max-width: $phone)
+    color: black
+    margin-top: 8px
+
+.header-features-element-ico
+  @media screen and (max-width: $phone)
+    svg
+      path
+        fill: black
