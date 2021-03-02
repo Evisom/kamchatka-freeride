@@ -1,0 +1,169 @@
+.merch-item-wrapper
+  .blueheading
+    margin-bottom: 24px
+
+  .merch-grid-subtitle
+    font-weight: 500
+    font-size: 15px
+    line-height: 20px
+    max-width: 850px
+    @media screen and (max-width: $phone)
+      display: none
+  .merch-grid-container
+    margin-bottom: 48px
+
+.merch-item
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: end
+  margin-bottom: 48px
+  @media screen and (max-width: $tablet)
+    margin-top: 16px
+  @media screen and (max-width: $phone)
+    flex-direction: column
+
+.merch-item-photo-slider
+  width: 50%
+  position: relative
+  margin-bottom: 36px
+  padding-right: 25px
+  @media screen and (max-width: $tablet)
+    padding-right: 13px
+    .pslider-dots
+      display: flex
+  @media screen and (max-width: $phone)
+    width: 100%
+    padding-right: 0
+
+.merch-item-photo-slider-container
+  display: flex
+  flex-direction: row
+  overflow-x: scroll
+.merch-item-photo-slider-container::-webkit-scrollbar
+  display: none
+.merch-item-photo-slider-element
+  width: 100%
+  height: auto
+
+.merch-item-info
+  width: 50%
+  display: flex
+  flex-direction: column
+  padding-left: 25px
+  @media screen and (max-width: $tablet)
+    padding-left: 13px
+  .bluebutton
+    width: 257px
+    height: 48px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 24px
+  @media screen and (max-width: $phone)
+    width: 100%
+    padding-left: 0
+
+.merch-item-info-subtitle
+  font-size: 15px
+  line-height: 22px
+  text-transform: uppercase
+.merch-item-info-title
+  font-weight: 500
+  font-size: 32px
+  line-height: 32px
+  margin-top: 12px
+
+.merch-item-info-text
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+  max-width: 430px
+  margin-top: 24px
+
+.merch-item-select-size-grid-element
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 30px
+  height: 30px
+  padding-bottom: 2px
+  border: 1px solid rgba(186, 190, 202, 0.5)
+  border-radius: 5px
+
+.merch-item-select-size-grid
+  display: grid
+  grid-template-columns: repeat(3 , 30px)
+  gap: 8px
+  margin-top: 12px
+
+.merch-item-select-size-grid-element-selected
+  border: 1px solid #469EDC
+
+.merch-item-select-size-grid-element-oos
+  background: rgba(186, 190, 202, 0.5)
+  border: none
+
+.merch-item-select
+  display: flex
+  flex-direction: row
+  margin-top: 24px
+  justify-content: space-between
+  max-width: 430px
+  @media screen and (max-width: $tablet)
+    flex-direction: column
+
+.merch-item-select-size-text
+  font-size: 15px
+  line-height: 20px
+  span
+    margin-left: 4px
+    font-weight: 500
+
+.merch-item-select-color-grid-element
+  width: 66px
+  height: 66px
+  border-radius: 5px
+.merch-item-select-color
+  @media screen and (max-width: $tablet)
+    margin-top: 24px
+.merch-item-select-color-grid
+  display: grid
+  grid-template-columns: repeat(2 , 66px)
+  gap: 8px
+  margin-top: 12px
+.merch-item-select-color-grid-element-selected
+  border: 2px solid #469EDC
+  border-radius: 5px
+  background-color: rgba(255 , 255 , 255 , 0.4)
+
+.merch-item-info-delivery
+  font-weight: 500
+  margin-top: 24px
+  font-size: 10px
+  line-height: 14px
+  color: #BABECA
+
+.merch-item-info-discount
+  display: flex
+  flex-direction: row
+  align-items: center
+  font-weight: 500
+  font-size: 13px
+  line-height: 20px
+  text-decoration-line: line-through
+  color: #BABECA
+  margin-top: 24px
+
+.merch-item-info-price
+  font-weight: 800
+  font-size: 26px
+  line-height: 39px
+  color: #469EDC
+
+.merch-item-info-bonus
+  font-weight: 500
+  font-size: 10px
+  line-height: 14px
+  color: #BABECA
+  margin-top: 8px
