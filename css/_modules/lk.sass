@@ -385,19 +385,131 @@
 
 
 
+.lk3-table
+  display: flex
+  flex-direction: column
+  margin-top: 36px
+  @media screen and (max-width: $tablet)
+    margin-top: 0
+
+.lk3-table-r
+  display: flex
+  flex-direction: row
+  padding-top: 25px
+  padding-bottom: 25px
+
+  @media screen and (max-width: $tablet)
+    flex-direction: column
+
+.lk3-table-r:not(:last-child)
+  border-bottom:  1px solid #F5F6FA
+
+.lk3-table-r-info.lk3-table-r-info-photo
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-grow: 1
+  align-items: center
+  @media screen and (max-width: $phone)
+    flex-direction: column
+
+.lk3-table-r-date
+  margin-right: 48px
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+  @media screen and (max-width: $tablet)
+    margin-bottom: 12px
+
+.lk3-table-r-info-text
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+  max-width: 420px
+  @media screen and (max-width: $tablet)
+    width: 100%
+  @media screen and (max-width: $phone)
+    margin-bottom: 24px
 
 
+.lk3-table-r-info-button
+  font-weight: 500
+  font-size: 13px
+  line-height: 19px
+  text-transform: uppercase
+  color: #469EDC
+  border: 1px solid #469EDC
+  box-sizing: border-box
+  border-radius: 30px
+  width: 221px
+  height: 37px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.lk3-table-r-info.lk3-table-r-info-movie
+  .mp-movies-slide
+    width: 100%
+    margin-top: 24px
+  @media screen and (max-width: $tablet)
+    .mp-movies-slide-gradient
+      padding-left: 32px
+      padding-right: 32px
+      padding-top: 48px
+    .mp-moviews-slide-h
+      max-width: unset
+    .mp-moviews-slide-p
+      max-width: unset
+  @media screen and (max-width: $phone)
+    .mp-movies-slide
+      height: 421px
+    .mp-movies-slide-gradient
+      padding-left: 16px
+      padding-right: 16px
+      padding-top: 16px
+    .mp-moviews-slide-h
+      max-width: unset
+    .mp-moviews-slide-p
+      overflow: unset
+      max-width: unset
 
 
+.mp-ig.lk3-ig
+  @media screen and (max-width: $tablet)
+    padding-top: 24px
+  .mp-ig-h
+    width: 100%
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    margin-bottom: 56px
+    @media screen and (max-width: $tablet)
+      display: flex
+      flex-direction: column
+      margin-bottom: 24px
+  .mp-ig-h-text
+    font-weight: 500
+    font-size: 22px
+    line-height: 32px
+    max-width: 394px
+    text-align: left
+    margin-right: 48px
+    @media screen and (max-width: $tablet)
+      margin-right: auto
+      margin-left: auto
+      text-align: center
+      font-weight: 500
+      font-size: 22px
+      line-height: 24px
+      margin-bottom: 24px
 
+  .mp-ig-sm
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
 
+  .mp-ig-sm-link
+    margin-right: 21px
 
-
-
-
-
-
-
-
-
-
+.mp-ig-grid.lk3-g
+  margin-bottom: 48px
