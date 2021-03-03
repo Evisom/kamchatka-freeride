@@ -1,0 +1,172 @@
+.lk-h
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: flex-end
+  margin-top: -64px
+  @media screen and (max-width: $tablet)
+    flex-direction: column-reverse
+    margin-top: 0
+    align-items: center
+    padding-top: 24px
+
+.lk-h-bonus
+  background: #469EDC
+  border-radius: 5px
+  width: 223px
+  height: 97px
+  display: flex
+  flex-direction: column
+  align-items: center
+  @media screen and (max-width: $tablet)
+    width: 100%
+  @media screen and (max-width: $phone)
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 2fr 1fr
+    grid-template-areas: "num link" "bonus link"
+    height: 74px
+
+.lk-h-bonus-num
+  font-weight: 800
+  font-size: 26px
+  line-height: 39px
+  color: #FFFFFF
+  margin-top: 12px
+  grid-area: num
+  @media screen and (max-width: $phone)
+    text-align: center
+    margin-top: 8px
+.lk-h-bonus-text
+  font-weight: 500
+  font-size: 13px
+  line-height: 19px
+  color: #FFFFFF
+  grid-area: bonus
+  margin-top: -4px
+  @media screen and (max-width: $phone)
+    text-align: center
+    margin-bottom: 8px
+
+.lk-h-bonus-link
+  font-weight: 500
+  font-size: 10px
+  line-height: 14px
+  text-decoration-line: underline
+  color: rgba(255, 255, 255, 0.5)
+  margin-top: 6px
+  grid-area: link
+  @media screen and (max-width: $tablet)
+    width: 100%
+    text-align: right
+    padding-right: 13px
+  @media screen and (max-width: $phone)
+    text-align: left
+    margin-top: 12px
+
+.lk-h-buttons
+  margin-bottom: 8px
+  @media screen and (max-width: $tablet)
+    width: 100%
+    margin-top: 24px
+
+.lk-h-buttons-btn
+  padding-top: 6px
+  padding-bottom: 6px
+  padding-left: 12px
+  padding-right: 12px
+  border: 1px solid #469EDC
+  border-radius: 30px
+  font-weight: 500
+  font-size: 10px
+  line-height: 14px
+  color: #469EDC
+  margin-right: 12px
+  @media screen and (max-width: $tablet)
+    margin-right: 6px
+    display: inline-block
+    margin-bottom: 6px
+
+.lk-h-buttons-btn-active
+  background: #469EDC
+  color: #FFFFFF
+
+.lk1-forms-label
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+  margin-top: 48px
+
+.lk1-forms-grid
+  margin-top: 32px
+  gap: 32px 8px
+  display: grid
+  grid-template-columns: repeat(3 , 190px)
+  @media screen and (max-width: $tablet)
+    grid-template-columns: repeat(3 , 1fr)
+  @media screen and (max-width: $phone)
+    grid-template-columns: repeat(1 , 1fr)
+
+
+
+.lk1-forms-row-c:last-child
+  @media screen and (max-width: $tablet)
+    display: none
+
+.lk1-forms-grid-el
+  outline: none
+  background: none
+
+  border-top: none
+  border-right: none
+  border-left: none
+  padding-bottom: 2px
+  border-bottom: 1px solid rgba(186, 190, 202, 0.3)
+  width: 100%
+
+.lk1-forms-grid-el::placeholder
+  font-size: 13px
+  color: $black
+  line-height: 20px
+
+.lk1-forms-row-c-label
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+  margin-bottom: 16px
+
+.lk1-forms-row
+  display: flex
+  flex-direction: row
+  margin-top: 48px
+  margin-bottom: 48px
+
+.lk1-forms-row-c
+  margin-right: 64px
+
+.lk1-forms-row-c-select
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  width: 190px
+  align-items: center
+  border-bottom: 1px solid rgba(186, 190, 202, 0.3)
+  padding-bottom: 4px
+  font-size: 13px
+  line-height: 20px
+
+.lk1-forms
+  padding-bottom: 64px
+  @media screen and (max-width: $tablet)
+    padding-bottom: 48px
+
+.lk1-forms-row-c-link
+  display: flex
+  flex-direction: row
+  align-items: center
+  a
+    font-weight: 500
+    font-size: 15px
+    line-height: 20px
+    margin-left: 25px
+    color: $black
