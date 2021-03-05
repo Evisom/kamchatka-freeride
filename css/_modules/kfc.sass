@@ -1,0 +1,68 @@
+.kfc-text
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+  margin-top: 48px
+  padding-bottom: 12px
+
+.program-roadmap.kfc-roadmap
+  .program-roadmap-grid-hr-day
+    background-image: url("./../img/icon/frost.svg")
+    background-repeat: no-repeat
+    background-position: center
+    width: 24px
+    height: 24px
+    margin-left: 25px
+    margin-right: 25px
+    @media screen and (max-width: $tablet)
+      display: none
+
+.kfc-roadmap-link
+  font-size: 15px
+  line-height: 20px
+  text-decoration-line: underline
+  color: #212946
+  text-align: center
+  width: 100%
+  display: block
+  @media screen and (max-width: $tablet)
+    margin-top: 36px
+
+
+.kfc-slider
+  margin-top: 48px
+  .bluebutton
+    margin-top: 24px
+    margin-right:  auto
+    margin-left: auto
+    width: fit-content
+.kfc-slider-container::-webkit-scrollbar
+  display: none
+.kfc-slider-container
+  display: grid
+  grid-template-columns: repeat(4 , 1fr)
+  gap: 12px
+  margin-top: 24px
+  @media screen and (max-width: $tablet)
+    display: flex
+    flex-direction: row
+    overflow-x: scroll
+  .program-card
+    width: 100%
+    @media screen and (max-width: $tablet)
+      width: 251px
+      flex-shrink: 0
+
+.wrapper.header-wrapper.kfc-header
+  @media screen and (max-width: $phone)
+    margin-bottom: 230px
+  .header-text2
+    font-weight: 800
+    font-size: 32px
+    margin-top: 48px
+    margin-bottom: 164px
+    @media screen and (max-width: $tablet)
+      margin-bottom: 96px
+    @media screen and (max-width: $phone)
+      margin-top: 115px
+      margin-bottom: -36px
