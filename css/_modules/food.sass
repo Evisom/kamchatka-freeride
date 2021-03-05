@@ -1,0 +1,44 @@
+.food-wrapper
+  .merch-grid-container
+    margin-top: 48px
+    @media screen and (max-width: $phone)
+      margin-top: 36px
+
+  .food-element-info
+    width: 100%
+    //height: 100%
+    border: 1px solid #469EDC
+    border-radius: 5px
+    margin-bottom: 62px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    .prall-programs-grid-container-custom-link
+      margin-bottom: 20px
+
+    @media screen and (max-width: $tablet)
+      margin-bottom: 0
+      .prall-programs-grid-container-custom-text
+        font-weight: 500
+        font-size: 15px
+        margin-left: 12px
+        margin-right: 12px
+  .prall-programs-grid-container-custom-ico
+    @media screen and (max-width: $phone)
+      margin-top: 12px
+      margin-left: 12px
+
+.food-filter
+  display: flex
+  flex-direction: row
+  margin-top: 48px
+  @media screen and (max-width: $tablet)
+    margin-top: 12px
+    flex-direction: column
+  .prall-filters-select
+    width: 256px
+    margin-right: 36px
+    flex-shrink: 0
+    @media screen and (max-width: $phone)
+      width: 100%
+      margin-top: 16px
