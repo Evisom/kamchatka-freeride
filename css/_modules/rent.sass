@@ -1,0 +1,67 @@
+
+
+.rent-filter
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  padding-top: 36px
+  @media screen and (max-width: $phone)
+    flex-direction: column
+
+.rent-filter-select
+  display: flex
+  flex-direction: row
+  @media screen and (max-width: $phone)
+    flex-direction: column
+  .prall-filters-select
+    width: 256px
+    margin-right: 36px
+    @media screen and (max-width: $phone)
+      width: 100%
+      margin-right: 0
+      margin-bottom: 16px
+
+.rent-filter-sort
+  @media screen and (max-width: $phone)
+    margin-left: auto
+
+.rent-grid
+  display: grid
+  grid-template-columns: repeat(4 , 1fr)
+  gap: 36px
+  margin-top: 48px
+  margin-bottom: 48px
+  @media screen and (max-width: $tablet)
+    gap: 20px
+  @media screen and (max-width: $phone)
+    grid-template-columns: repeat(2 , 1fr)
+    grid-column-gap: 8px
+    grid-row-gap: 24px
+
+.rent-grid-element-info
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-top: 46px
+  @media screen and (max-width: $tablet)
+    flex-direction: column
+    margin-top: 16px
+.rent-grid-element-info-right
+  font-weight: 500
+  font-size: 15px
+  line-height: 18px
+  width: 86px
+  text-align: right
+  @media screen and (max-width: $tablet)
+    width: 100%
+    text-align: left
+    margin-top: 6px
+
+.rent-grid-element-info-left
+  font-weight: 500
+  font-size: 15px
+  line-height: 18px
+
+.rent-grid-element-photo
+  width: 100%
+  height: auto
