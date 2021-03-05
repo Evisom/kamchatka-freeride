@@ -1,0 +1,79 @@
+.blog2-links-container-c-link
+  font-weight: 500
+  font-size: 13px
+  line-height: 20px
+  color: black
+
+.blog2-links-container-c-link-active
+  color: #469EDC
+
+.blog2-links-container-c
+  display: flex
+  flex-direction: column
+  margin-right: 72px
+
+.blog2-links-container
+  display: flex
+  flex-direction: row
+  margin-top: 48px
+  @media screen and (max-width: $tablet)
+    display: none
+
+.blog2-grid
+  margin-top: 56px
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  grid-template-rows: repeat(3 , 258px)
+  grid-template-areas: "g1 g1 g1" "g2 g3 g4" "g5 g3 g6"
+  gap: 32px
+  @media screen and (max-width: $tablet)
+    margin-top: 24px
+    display: grid
+    grid-template-columns: repeat(9, 1fr)
+    grid-template-rows: repeat(4, 304px)
+    gap: 12px
+    grid-template-areas: "g1 g1 g1 g1 g1 g1 g1 g1 g1" "g2 g2 g2 g2 g2 g3 g3 g3 g3" "g4 g4 g4 g4 g5 g5 g5 g5 g5" "g6 g6 g6 g6 g6 g6 g6 g6 g6"
+  @media screen and (max-width: $phone)
+    grid-template-columns: 1fr
+    grid-template-rows: repeat(6, 304px)
+    grid-template-areas: "." "." "." "." "." "."
+  .program-card
+    width: 100%
+    height: 100%
+    @media screen and (max-width: $phone)
+      grid-area: unset !important
+  .program-card:nth-child(1)
+    grid-area: g1
+  .program-card:nth-child(2)
+    grid-area: g2
+    border: 1px solid #469EDC
+    background: none
+    .program-card-gradient
+      background: none
+    .program-card-info-subtitle, .program-card-info-title
+      color: #469EDC
+    .program-card-seemore
+      color: #469EDC
+      border-color: #469EDC
+
+  .program-card:nth-child(3)
+    grid-area: g3
+  .program-card:nth-child(4)
+    grid-area: g4
+  .program-card:nth-child(5)
+    grid-area: g5
+  .program-card:nth-child(6)
+    grid-area: g6
+    background: none
+    border: 1px solid #469EDC
+    .program-card-gradient
+      background: none
+    .program-card-info-subtitle, .program-card-info-title
+      color: #469EDC
+    .program-card-seemore
+      color: #469EDC
+      border-color: #469EDC
+
+.blog2-wrapper
+  .top-buttons-main
+    opacity: 0
