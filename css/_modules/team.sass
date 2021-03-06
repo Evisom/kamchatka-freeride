@@ -1,0 +1,124 @@
+.team-heading
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  .lk-h-buttons-btn
+    text-transform: uppercase
+    @media screen and (max-width: $tablet)
+      display: inline-block
+  @media screen and (max-width: $tablet)
+    padding-top: 24px
+    flex-direction: column
+    align-items: start
+
+.team-heading-buttons
+  @media screen and (max-width: $tablet)
+    margin-top: 24px
+
+.team-member-info-main
+  display: grid
+  grid-template-areas: "photo button ." "photo name sm"
+  grid-template-columns: 121px 200px 32px
+  grid-template-rows: 40px 80px
+  grid-column-gap: 42px
+  margin-top: 48px
+  @media screen and (max-width: $tablet)
+    grid-column-gap: 30px
+    grid-template-columns: 100px 200px 32px
+  @media screen and (max-width: $phone)
+    grid-template-areas: "photo name" "photo button"
+    grid-template-columns: 60px auto
+    grid-template-rows: 1fr 1fr
+    grid-column-gap: 21px
+
+.team-member-info-main-photo
+  grid-area: photo
+  width: 120px
+  height: 120px
+  border-radius: 50%
+  @media screen and (max-width: $tablet)
+    width: 100px
+    height: 100px
+  @media screen and (max-width: $phone)
+    width: 60px
+    height: 60px
+
+.team-member-info-main-name
+  grid-area: name
+  font-weight: 500
+  font-size: 20px
+  line-height: 24px
+  @media screen and (max-width: $phone)
+    font-weight: 500
+    font-size: 18px
+    line-height: 24px
+.team-member-info-main-button
+  grid-area: button
+  height: fit-content
+  width: fit-content
+
+.team-member-info-main-sm
+  grid-area: sm
+  display: flex
+  flex-direction: row
+  margin-left: -44px
+  margin-top: 4px
+  a
+    margin-right: 12px
+  @media screen and (max-width: $phone)
+    position: absolute
+    bottom: 0
+    left: 44px
+
+
+.team-member-info-text
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+  margin-left: 164px
+  margin-top: -24px
+  @media screen and (max-width: $tablet)
+    margin-left: 132px
+    margin-top: -36px
+  @media screen and (max-width: $phone)
+    margin-top: 8px
+    margin-left: 0
+    padding-bottom: 36px
+
+.team-member-info
+  position: relative
+
+.team-member-info-slider-control
+  display: flex
+  flex-direction: row
+  justify-content: flex-end
+  margin-top: 24px
+
+.team-member-info-slider-container::-webkit-scrollbar
+  display: none
+.team-member-info-slider-container
+  display: flex
+  flex-direction: row
+  margin-top: 27px
+  margin-bottom: 48px
+  overflow-x: scroll
+  @media screen and (max-width: $tablet)
+    margin-top: 0
+
+.team-member-info-slider-container-element
+  flex-shrink: 0
+  width: 268px
+  height: auto
+  margin-right: 24px
+
+.team-member-info-slider-container-element:first-child
+  margin-left: 290px
+  @media screen and (min-width: 1400px )
+    margin-left: calc((100% - 1145px )/ 2 + 164px)
+  @media screen and (max-width: $laptop)
+    margin-left: 180px
+  @media screen and (max-width: $tablet)
+    margin-left: 153px
+  @media screen and (max-width: $phone)
+    margin-left: 21px
