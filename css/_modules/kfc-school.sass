@@ -1,0 +1,130 @@
+.kfcschool-wrapper
+  //.program-guide-slider-element
+  //  flex-direction: column-reverse
+  //  justify-content: flex-end
+  //  .program-guide-slider-element-guide
+  //    margin-top: 0
+  //  .program-guide-slider-element-photo
+  //    font-weight: 500
+  //    font-size: 15px
+  //    line-height: 20px
+  //    margin-top: 40px
+  //    max-width: 249px
+
+
+.kfcschool-buttons
+  display: flex
+  flex-direction: row
+  align-items: center
+  margin-top: 16px
+  @media screen and (max-width: $tablet)
+    display: none
+
+.kfcschool-text
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+  margin-top: 28px
+
+.kfcschool-cards-container
+  display: grid
+  grid-template-columns: repeat(3 , 1fr)
+  grid-column-gap: 24px
+  margin-top: 48px
+  @media screen and (max-width: $tablet)
+    overflow-x: scroll
+    margin-top: 24px
+.kfcschool-cards-container::-webkit-scrollbar
+  display: none
+
+.kfcschool-cards-element
+  box-shadow: 0px 4px 10px rgba(186, 190, 202, 0.5)
+  height: 315px
+  border-radius: 5px
+  padding: 30px
+  display: flex
+  flex-direction: column
+  @media screen and (max-width: $tablet)
+    width: 250px
+    flex-shrink: 0
+    margin-top: 8px
+    margin-bottom: 8px
+    margin-left: 6px
+
+.kfcschool-cards-element-title
+  font-weight: 500
+  margin-top: auto
+  font-size: 22px
+  line-height: 24px
+.kfcschool-cards-element-icon
+  flex-grow: 1
+.kfcschool-cards-element-text
+  font-weight: 500
+  margin-top: 12px
+  font-size: 15px
+  line-height: 20px
+
+.kfcschool-cards
+  margin-top: 48px
+
+.kfcschool-form
+  background-image: url("./../img/photo/kfcschool.png")
+  background-position: center
+  background-size: cover
+  padding-top: 75px
+  padding-bottom: 75px
+  .blueheading
+    @media screen and (max-width: $tablet)
+      max-width: 480px
+  .bluebutton
+    width: fit-content
+    margin-left: auto
+    margin-right: auto
+    margin-top: 40px
+.kfcschool-form-element
+  background: #FFFFFF
+  box-shadow: 0px 4px 10px rgba(186, 190, 202, 0.5)
+  border-radius: 5px
+  width: 663px
+  height: 419px
+  margin: auto
+  padding: 25px
+  display: flex
+  flex-direction: column
+  @media screen and (max-width: $tablet)
+    width: 100%
+  @media screen and (max-width: $phone)
+    height: 532px
+    .lk1-forms-row-c-select
+      width: 100%
+  .kfcschool-form-element-r
+    margin-top: 40px
+    display: flex
+    flex-direction: row
+    @media screen and (max-width: $phone)
+      flex-direction: column
+      margin-top: 25px
+      .lk1-forms-grid-el
+        margin-bottom: 25px
+    .lk1-forms-grid-el:not(:first-child)
+      margin-left: 40px
+      @media screen and (max-width: $phone)
+        margin-left: 0
+  .lk1-forms-row-c-select
+    text-transform: uppercase
+
+.kfcschool-form-element-checkbox
+  margin-top: 32px
+.kfcschool-form-element-checkbox-r
+  display: flex
+  flex-direction: row
+  align-items: center
+  font-size: 10px
+  line-height: 15px
+  margin-bottom: 21px
+  svg
+    margin-bottom: 8px
+    margin-left: 4px
+  input
+    margin-right: 12px
+    border-radius: 50%
