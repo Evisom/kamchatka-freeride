@@ -77,3 +77,44 @@
 .blog2-wrapper
   .top-buttons-main
     opacity: 0
+
+
+.blog1-articles
+  margin-top: 48px
+  margin-bottom: 48px
+
+.blog1-articles-container
+  display: grid
+  grid-template-columns: repeat(3 , 1fr)
+  grid-column-gap: 33px
+  grid-template-rows: 258px
+  margin-top: 48px
+  @media screen and (max-width: $tablet)
+    display: flex
+    flex-direction: row
+    overflow-x: scroll
+    margin-top: 24px
+  .program-card
+    height: 100%
+    width: 100%
+    @media screen and (max-width: $tablet)
+      width: 250px
+      height: 370px
+      flex-shrink: 0
+
+.blog1-articles-container::-webkit-scrollbar
+  display: none
+
+.blog1-wrapper
+  .merch-grid-container
+    padding-top: 48px
+
+
+.blog1-article
+  img
+    float: right
+  .blog1-article-text
+    float: left
+    font-weight: 500
+    font-size: 15px
+    line-height: 20px
