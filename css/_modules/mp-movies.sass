@@ -10,12 +10,15 @@
     max-width: 260px
 
 .mp-movies-slider-container
-    display: flex
-    overflow-x: scroll
     width: 100%
     margin-top: 32px
     -ms-overflow-style: none
     scrollbar-width: none
+
+    @media screen and (min-width: 1400px )
+      padding-left: calc((100% - 1145px )/ 2)
+    @media screen and (max-width: $laptop)
+      padding-left: 21px
 
 .mp-movies-slider-container::-webkit-scrollbar
   display: none
@@ -34,12 +37,6 @@
     width: 251px
     height: 365px
     margin-right: 11px
-.mp-movies-slide:first-child
-  @media screen and (min-width: 1400px )
-    margin-left: calc((100% - 1145px )/ 2)
-  margin-left: 128px
-  @media screen and (max-width: $laptop)
-    margin-left: 21px
 .mp-movies-slide-gradient
   display: flex
   flex-direction: column
