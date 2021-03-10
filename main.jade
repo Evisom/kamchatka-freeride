@@ -39,16 +39,25 @@
         .slider-heading
             .blueheading Блог
             .slider-heading-controls
-                button
+                button#blog-prev
                     img(src="./img/icon/slider-control.svg")
-                button
+                button#blog-next
                     img(src="./img/icon/slider-control.svg")
-        .mp-blog-container.slider-container
-            .mp-blog-container-slide
+        .mp-blog-container.slider-container#slider-blog
+            .mp-blog-container-slide.mp-blog-container-slide--halved
                 != partial("/_tmp/program-card")
                 != partial("/_tmp/program-card")
+            .mp-blog-container-slide.mp-blog-container-slide--full
+                != partial("/_tmp/program-card")
+            .mp-blog-container-slide.mp-blog-container-slide--halved
                 != partial("/_tmp/program-card")
                 != partial("/_tmp/program-card")
+            .mp-blog-container-slide.mp-blog-container-slide--full
+                != partial("/_tmp/program-card")
+            .mp-blog-container-slide.mp-blog-container-slide--halved
+                != partial("/_tmp/program-card")
+                != partial("/_tmp/program-card")
+            .mp-blog-container-slide.mp-blog-container-slide--full
                 != partial("/_tmp/program-card")
         .mp-blog-button.bluebutton перейти в блог
 

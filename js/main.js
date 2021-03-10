@@ -7,9 +7,25 @@ $('#burger').click(() => {
 })
 
 $('#slider-movies').slick({
-    infinite: true,
     slidesToScroll: 1,
-    prevArrow: $('.slider-heading-controls-prev'),
-    nextArrow: $('.slider-heading-controls-next'),
-    variableWidth: true
+    prevArrow: $('#movies-prev'),
+    nextArrow: $('#movies-next'),
+    variableWidth: true,
+})
+
+$('#slider-blog').slick({
+    slidesToScroll: 1,
+    slidesToShow: 3,
+    prevArrow: $('#blog-prev'),
+    nextArrow: $('#blog-next'),
+    adaptiveHeight: false,
+
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                variableWidth: true,
+            },
+        },
+    ],
 })

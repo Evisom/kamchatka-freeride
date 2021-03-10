@@ -9,50 +9,59 @@
         margin-left: 21px
         margin-top: 48px
 
-.mp-blog-container-slide
-  display: grid
-  grid-template-columns: repeat(3, 1fr)
-  grid-template-rows: repeat(2, 258px)
-  grid-template-areas: ". center ." ". center ."
-  gap: 34px 34px
-  @media screen and (max-width: $tablet)
-    gap: 0
-
-.mp-blog-container-slide
-  .program-card:first-child
-    grid-area: center
-    .program-card-gradient
-      justify-content: flex-end
-      @media screen and (max-width: $tablet)
-        justify-content: space-between
-      .program-card-info-subtitle
-        margin-bottom: 56px
-        @media screen and (max-width: $tablet)
-          margin-top: 12px
-          margin-bottom: 0
-      .program-card-info-title
-        @media screen and (max-width: $tablet)
-          margin-bottom: 0
-        margin-bottom: 24px
-  @media screen and (max-width: $tablet)
-    display: flex
-    overflow-x: scroll
-    width: 100%
-    margin-top: 32px
-    -ms-overflow-style: none
-    scrollbar-width: none
-    .program-card
-      display: inline-block
-      width: 251px !important
-      height: 369px !important
-      flex-shrink: 0
-      margin-right: 11px
-    .program-card:first-child
+  .mp-blog-container
+    margin: 48px -12px 0
+    @media screen and (max-width: $tablet)
+      margin: 0
       margin-left: 21px
-  .program-card
-    height: 100%
-    width: 100%
 
+  .mp-blog-container-slide
+    margin: 0 12px
+    .program-card
+      height: 540px
+      width: 100%
+      .program-card-gradient
+        @media screen and (max-width: $tablet)
+          justify-content: space-between
+        .program-card-info-subtitle
+          margin-bottom: 56px
+          @media screen and (max-width: $tablet)
+            margin-top: 12px
+            margin-bottom: 0
+        .program-card-info-title
+          @media screen and (max-width: $tablet)
+            margin-bottom: 0
+          margin-bottom: 24px
+    @media screen and (max-width: $tablet)
+      margin: 0 6px
+      display: flex
+      overflow-x: scroll
+      margin-top: 32px
+      -ms-overflow-style: none
+      scrollbar-width: none
+      .program-card
+        display: inline-block
+        height: 369px
+        width: 251px !important
+
+  .mp-blog-container-slide--full
+    .program-card
+      .program-card-gradient
+        justify-content: flex-end
+        @media screen and (max-width: $tablet)
+          justify-content: space-between
+
+  .mp-blog-container-slide--halved
+    justify-content: space-between
+    .program-card
+      height: 258px
+      margin-bottom: 24px
+    @media screen and (max-width: $tablet)
+      width: 514px !important
+      display: flex !important
+      .program-card
+        height: 369px
+        margin-bottom: 0
 
 .mp-blog-container-slide::-webkit-scrollbar
   display: none
