@@ -111,10 +111,69 @@
 
 
 .blog1-article
-  img
+  position: relative
+  height: 500px
+  @media screen and (max-width: $tablet)
+    height: auto
+  .blog1-article-text-img
     float: right
+    margin-bottom: 16px
+    @media screen and (max-width: $tablet)
+      float: none
+      order: 4
+      width: 100%
+      height: 250px
+      object-fit: cover
+      margin-top: 36px
+
+  p
+    margin-top: 24px
+    @media screen and (max-width: $tablet)
+      order: 5
+  p.blog1-article-text-firts
+    @media screen and (max-width: $tablet)
+      order: 3
   .blog1-article-text
     float: left
     font-weight: 500
     font-size: 15px
     line-height: 20px
+    @media screen and (max-width: $tablet)
+      display: flex
+      flex-direction: column
+    .pslider-container
+      margin-top: 48px
+      margin-bottom: 56px
+      order: 7
+.blog1-article-text-links
+  display: flex
+  flex-direction: row
+  @media screen and (max-width: $tablet)
+    order: 1
+    padding-top: 24px
+
+.blog1-article-text-heading
+  font-weight: 800
+  font-size: 32px
+  line-height: 32px
+  color: #469EDC
+  margin-bottom: 36px
+  margin-top: 40px
+  @media screen and (max-width: $tablet)
+    order: 2
+    margin-top: 24px
+    font-size: 22px
+    margin-bottom: 0
+
+.blog1-article-text-grid
+  display: grid
+  grid-template-columns: repeat(3 , 1fr)
+  grid-template-rows: auto auto
+  margin-top: 48px
+  order: 6
+  img
+    width: 100%
+  @media screen and (max-width: $tablet)
+    grid-template-columns: repeat(2, 1fr)
+  @media screen and (max-width: $phone)
+    display: none
