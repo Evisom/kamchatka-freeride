@@ -3,12 +3,15 @@
   .blueheading
     max-width: 410px
   .slider-container
-    display: flex
-    overflow-x: scroll
     width: 100%
     margin-top: 32px
     -ms-overflow-style: none
     scrollbar-width: none
+    padding-left: 128px
+    @media screen and (min-width: 1400px )
+      padding-left: calc((100% - 1145px )/ 2)
+    @media screen and (max-width: $laptop)
+      padding-left: 21px
 .slider-container::-webkit-scrollbar
   display: none
 .mp-reviews-slider-element
@@ -35,12 +38,6 @@
   @media screen and (max-width: $phone)
     width: 251px
     height: 406px
-.mp-reviews-slider-element:first-child
-  @media screen and (min-width: 1400px )
-    margin-left: calc((100% - 1145px )/ 2)
-  margin-left: 128px
-  @media screen and (max-width: $laptop)
-    margin-left: 21px
 .mp-reviews-slider-element-c1
   width: 200px
   flex-shrink: 0

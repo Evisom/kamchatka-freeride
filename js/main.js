@@ -29,3 +29,10 @@ $('#slider-blog').slick({
         },
     ],
 })
+
+$('#slider-reviews').slick({
+    slidesToScroll: 1,
+    prevArrow: $('#reviews-prev'),
+    nextArrow: $('#reviews-next'),
+    variableWidth: true,
+})
