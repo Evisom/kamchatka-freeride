@@ -1,0 +1,24 @@
+{
+  "name": "kamchatka-freeride",
+  "version": "1.0.0",
+  "description": "---",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "harp server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evisom/kamchatka-freeride.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evisom/kamchatka-freeride/issues"
+  },
+  "homepage": "https://github.com/Evisom/kamchatka-freeride#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.0",
+    "harp": "^0.33.0"
+  }
+}
