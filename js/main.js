@@ -1,10 +1,31 @@
-$("#burger").click( () => {
-    if (
-        ($("#mobilemenu").attr("class")).split(" ").length == 1
-    ) {
-        $("#mobilemenu").addClass("navbar-mobilemenu-active")
+$('#burger').click(() => {
+    if ($('#mobilemenu').attr('class').split(' ').length == 1) {
+        $('#mobilemenu').addClass('navbar-mobilemenu-active')
     } else {
-        $("#mobilemenu").removeClass("navbar-mobilemenu-active")
+        $('#mobilemenu').removeClass('navbar-mobilemenu-active')
     }
 })
 
+$('#slider-movies').slick({
+    slidesToScroll: 1,
+    prevArrow: $('#movies-prev'),
+    nextArrow: $('#movies-next'),
+    variableWidth: true,
+})
+
+$('#slider-blog').slick({
+    slidesToScroll: 1,
+    slidesToShow: 3,
+    prevArrow: $('#blog-prev'),
+    nextArrow: $('#blog-next'),
+    adaptiveHeight: false,
+
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                variableWidth: true,
+            },
+        },
+    ],
+})
