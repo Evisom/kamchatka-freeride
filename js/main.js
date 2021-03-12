@@ -36,3 +36,19 @@ $('#slider-reviews').slick({
     nextArrow: $('#reviews-next'),
     variableWidth: true,
 })
+
+$('#slider-reviews-full').slick({
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    prevArrow: $('#reviews-prev'),
+    nextArrow: $('#reviews-next'),
+
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                variableWidth: true,
+            },
+        },
+    ],
+})
