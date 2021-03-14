@@ -1,12 +1,15 @@
 .program-reviews
   width: 100%
   .mp-reviews-slider-element
-    margin-left: 6px
-    width: 97%
-  @media screen and (max-width: $tablet)
-    .mp-reviews-slider-element
+    width: 100%
+    @media screen and (max-width: $laptop)
+      margin: 0
+    @media screen and (max-width: $tablet)
       width: 423px
-      margin-right: 11px
-  @media screen and (max-width: $phone)
-    .mp-reviews-slider-element
+      margin: 2px 20px 2px 2px
+    @media screen and (max-width: $phone)
       width: 251px
+
+  .slider-container
+    @media screen and (max-width: $laptop)
+      padding-left: 0px
