@@ -96,3 +96,10 @@ $('#slider-items').slick({
         }
     ],
 })
+
+$('#slider-simprog').slick({
+    slidesToScroll: 1,
+    prevArrow: $('#simprog-prev'),
+    nextArrow: $('#simprog-next'),
+    variableWidth: true,
+})
