@@ -61,7 +61,7 @@ $('#slider-guide').slick({
     variableWidth: true,
 })
 
-$('.pslider-slides').slick({
+$('.pslider-slides, .merch-item-photo-slider-container').slick({
     slidesToScroll: 1,
     slidesToShow: 1,
     dots: true,

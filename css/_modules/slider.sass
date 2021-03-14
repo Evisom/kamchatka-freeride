@@ -4,26 +4,27 @@
   margin-bottom: 26px
   position: relative
   margin-top: 24px
-  .slick-dots
-    display: flex !important
-    flex-direction: row !important
-    position: absolute
-    bottom: -21px
-    width: 100%
-    justify-content: center
-    @media screen and (max-width: $tablet)
+
+.slick-dots
+  display: flex !important
+  flex-direction: row !important
+  position: absolute
+  bottom: -21px
+  width: 100%
+  justify-content: center
+  @media screen and (max-width: $tablet)
+    display: none
+  li
+    width: 9px
+    height: 9px
+    border: 1px solid #BABECA
+    border-radius: 50%
+    margin-right: 12px
+    cursor: pointer
+    button
       display: none
-    li
-      width: 9px
-      height: 9px
-      border: 1px solid #BABECA
-      border-radius: 50%
-      margin-right: 12px
-      cursor: pointer
-      button
-        display: none
-    li.slick-active
-      background: #469EDC
+  li.slick-active
+    background: #469EDC
 
 .pslider-slide
   width: 100%
