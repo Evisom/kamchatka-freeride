@@ -104,8 +104,8 @@
                     .residence-features-element-info-title Сауна с видом  на Авачинскую бухту
                     .residence-features-element-info-subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     .residence-features-element-info-price 1500 р. \ 1 час
-
-                != partial("/_tmp/slider")
+                .residence-features-element-slider
+                    != partial("/_tmp/slider")
 
 
     .kfcschool-form
@@ -141,52 +141,15 @@
             .slider-heading
                 .blueheading Гиды по этой программе
                 .slider-heading-controls
-                    button
+                    button#guide-prev
                         img(src="./img/icon/slider-control.svg")
-                    button
+                    button#guide-next
                         img(src="./img/icon/slider-control.svg")
-            .slider-container
-                .program-guide-slider-element
-                    img.program-guide-slider-element-photo(src="./img/photo/guide.png")
-                    .program-guide-slider-element-guide
-                        img(src="./img/photo/review-photo.png").program-guide-slider-element-guide-photo
-                        .program-guide-slider-element-guide-info
-                            .program-guide-slider-element-guide-info-name Кирилл Киселёв
-                            .program-guide-slider-element-guide-info-key.program-guide-slider-element-guide-info-key-exp Опыт катания:
-                            .program-guide-slider-element-guide-info-value.program-guide-slider-element-guide-info-value-expv 8 лет
-                            .program-guide-slider-element-guide-info-key.program-guide-slider-element-guide-info-key-type Опыт катания:
-                            .program-guide-slider-element-guide-info-value.program-guide-slider-element-guide-info-value-typev 8 лет
-                .program-guide-slider-element
-                    img.program-guide-slider-element-photo(src="./img/photo/guide.png")
-                    .program-guide-slider-element-guide
-                        img(src="./img/photo/review-photo.png").program-guide-slider-element-guide-photo
-                        .program-guide-slider-element-guide-info
-                            .program-guide-slider-element-guide-info-name Кирилл Киселёв
-                            .program-guide-slider-element-guide-info-key.program-guide-slider-element-guide-info-key-exp Опыт катания:
-                            .program-guide-slider-element-guide-info-value.program-guide-slider-element-guide-info-value-expv 8 лет
-                            .program-guide-slider-element-guide-info-key.program-guide-slider-element-guide-info-key-type Опыт катания:
-                            .program-guide-slider-element-guide-info-value.program-guide-slider-element-guide-info-value-typev 8 лет
-
-
-
-
-                .program-guide-slider-element
-                    img.program-guide-slider-element-photo(src="./img/photo/guide.png")
-                    .program-guide-slider-element-guide
-                        img(src="./img/photo/review-photo.png").program-guide-slider-element-guide-photo
-                        .program-guide-slider-element-guide-info
-                            .program-guide-slider-element-guide-info-name Кирилл Киселёв
-                            .program-guide-slider-element-guide-info-key.program-guide-slider-element-guide-info-key-exp Опыт катания:
-                            .program-guide-slider-element-guide-info-value.program-guide-slider-element-guide-info-value-expv 8 лет
-                            .program-guide-slider-element-guide-info-key.program-guide-slider-element-guide-info-key-type Опыт катания:
-                            .program-guide-slider-element-guide-info-value.program-guide-slider-element-guide-info-value-typev 8 лет
-
-
-
-
-
-
-
+            .slider-container#slider-guide
+                != partial("./_tmp/guide-card")
+                != partial("./_tmp/guide-card")
+                != partial("./_tmp/guide-card")
+                != partial("./_tmp/guide-card")
 
 
 
