@@ -52,3 +52,12 @@ $('#slider-reviews-full').slick({
         },
     ],
 })
+
+$('#slider-guide').slick({
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    prevArrow: $('#guide-prev'),
+    nextArrow: $('#guide-next'),
+    variableWidth: true,
+})
+
