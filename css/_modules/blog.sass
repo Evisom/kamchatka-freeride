@@ -177,3 +177,208 @@
     grid-template-columns: repeat(2, 1fr)
   @media screen and (max-width: $phone)
     display: none
+
+
+.blog3-wrapper
+  .blueheading
+    margin-top: 0
+    @media screen and (max-width: $tablet)
+      padding-top: 24px
+  .blog3-grid
+    display: grid
+    grid-template-columns: repeat(2 , 1fr)
+    grid-row-gap: 48px
+    margin-top: 48px
+    grid-column-gap: 24px
+    margin-bottom: 71px
+    @media screen and (max-width: $tablet)
+      grid-template-areas: ". ." ". ." "h1 h1" "h2 h2"
+      margin-bottom: 48px
+    @media screen and (max-width: $phone)
+      grid-template-columns: 1fr
+      grid-template-areas: "." "." "." "." "h1" "h2"
+      grid-template-rows: 24px
+  .blog3-grid-element-title
+    font-weight: 500
+    font-size: 32px
+    line-height: 32px
+    @media screen and (max-width: $tablet)
+      font-size: 22px
+    @media screen and (max-width: $phone)
+      font-size: 20px
+  .blog3-grid-element-subtitle
+    font-weight: 300
+    margin-top: 4px
+    font-size: 15px
+    line-height: 20px
+    @media screen and (max-width: $tablet)
+      font-size: 15px
+      margin-top: 0
+  .blog3-grid-element
+    display: flex
+    flex-direction: column
+    a
+      margin-right: 12px
+  .blog3-grid-element-links
+    margin-bottom: 8px
+  .blog3-grid-element-info
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-top: 12px
+    margin-bottom: 24px
+
+  .blog3-grid-element-info-text
+    font-weight: 500
+    font-size: 15px
+    line-height: 20px
+    max-width: 250px
+    margin-left: 12px
+    @media screen and (max-width: $tablet)
+      font-size: 10px
+      line-height: 14px
+      max-width: 168px
+  .blog3-grid-element-img
+    width: 100%
+    height: auto
+  @media screen and (max-width: $tablet)
+    .blog3-grid-element-house1
+      grid-area: h1
+    .blog3-grid-element-house2
+      grid-area: h2
+    .blog3-grid-element-house1, .blog3-grid-element-house2
+      flex-direction: row
+      justify-content: space-between
+      img
+        width: 50%
+
+@media screen and (max-width: $phone)
+  .blog3-grid-element-house1, .blog3-grid-element-house2
+    flex-direction: column !important
+    img
+      width: 100% !important
+
+.blog3-form-wrapper.wrapper
+  background: url("./../img/photo/blog3.png")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  height: 993px
+  padding-top: 80px
+  @media screen and (max-width: $tablet)
+    height: 796px
+  @media screen and (max-width: $phone)
+    padding-top: 64px
+    height: 1020px
+
+.blog3-form-container
+  box-shadow: 0px 4px 10px rgba(186, 190, 202, 0.5)
+  border-radius: 5px
+  width: 765px
+  background: white
+  height: 772px
+  padding: 24px
+  @media screen and (max-width: $tablet)
+    width: 100%
+    height: 652px
+  @media screen and (max-width: $phone)
+    height: 886px
+  .blog3-form-container-r
+    display: flex
+    flex-direction: row
+    @media screen and (max-width: $phone)
+      flex-direction: column
+      input
+        margin-top: 24px
+  .blog3-form-container-title
+    font-weight: 800
+    font-size: 22px
+    line-height: 30px
+    color: #469EDC
+    @media screen and (max-width: $phone)
+      margin-bottom: 24px
+  input::placeholder
+    text-transform: uppercase
+    font-size: 13px
+    line-height: 20px
+  .blog3-form-container-r.blog3-form-container-r-theme
+    input
+      max-width: 340px
+      margin-top: 48px
+      margin-bottom: 24px
+      @media screen and (max-width: $tablet)
+        margin-top: 0
+        margin-bottom: 0
+
+  .blog3-form-container-r
+    margin-top: 24px
+    input:first-child
+      margin-right: 32px
+    @media screen and (max-width: $tablet)
+      margin-top: 20px
+    @media screen and (max-width: $phone)
+      margin-top: 0
+  .blog3-form-container-textarea
+    display: flex
+    flex-direction: column
+    margin-top: 40px
+    label
+      font-weight: 500
+      font-size: 15px
+      line-height: 18px
+    textarea
+      resize: none
+      border: 1px solid rgba(186, 190, 202, 0.3)
+      box-sizing: border-box
+      border-radius: 5px
+      margin-top: 12px
+      height: 212px
+      @media screen and (max-width: $tablet)
+        height: 177px
+      @media screen and (max-width: $phone)
+        height: 266px
+    @media screen and (max-width: $tablet)
+      margin-top: 20px
+  .blog3-form-container-upload
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-top: 24px
+    @media screen and (max-width: $phone)
+      align-items: flex-start
+  .blog3-form-container-upload-text
+    margin-left: 18px
+  .blog3-form-container-upload-text-title
+    font-weight: 500
+    font-size: 15px
+    line-height: 18px
+  .blog3-form-container-upload-text-subtitle
+    font-size: 10px
+    line-height: 18px
+
+  .blog3-form-container-checkbox
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-top: 24px
+    @media screen and (max-width: $phone)
+      align-items: flex-start
+
+  .blog3-form-container-checkbox-text
+    font-size: 10px
+    line-height: 15px
+    margin-left: 18px
+  .bluebutton
+    width: 256px
+    margin-top: 32px
+    margin-left: auto
+    margin-right: auto
+    height: 48px
+    display: flex
+    justify-content: center
+    align-items: center
+    @media screen and (max-width: $tablet)
+      margin-top: 48px
+    @media screen and (max-width: $phone)
+      width: 100%
+      margin-top: 36px
