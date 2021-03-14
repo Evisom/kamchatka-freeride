@@ -1,73 +1,53 @@
-.pslider-dots
-  display: flex
-  flex-direction: row
-  position: absolute
-  bottom: -21px
-  width: 100%
-  justify-content: center
-  @media screen and (max-width: $tablet)
-    display: none
-
-.pslider-dots-dot
-  width: 9px
-  height: 9px
-  border: 1px solid #BABECA
-  border-radius: 50%
-  margin-right: 12px
-
-.pslider-dots-active
-  background: #469EDC
-
 .pslider-container
   width: 100%
   height: fit-content
-  position: relative
   margin-bottom: 26px
-  @media screen and (max-width: $tablet)
-    display: flex
-    flex-direction: row
-    overflow-x: scroll
-    overflow-y: hidden
-
-
-.pslider-container::-webkit-scrollbar
-  display: none
-
-
-.pslider-container
-  overflow: -moz-scrollbars-none
-  -ms-overflow-style: none
-  scrollbar-width: none
-  width: 100%
+  position: relative
   margin-top: 24px
+  .slick-dots
+    display: flex !important
+    flex-direction: row !important
+    position: absolute
+    bottom: -21px
+    width: 100%
+    justify-content: center
+    @media screen and (max-width: $tablet)
+      display: none
+    li
+      width: 9px
+      height: 9px
+      border: 1px solid #BABECA
+      border-radius: 50%
+      margin-right: 12px
+      cursor: pointer
+      button
+        display: none
+    li.slick-active
+      background: #469EDC
 
 .pslider-slide
   width: 100%
   height: auto
-  display: none
-  @media screen and (max-width: $tablet)
-    display: block
-    margin-right: 11px
-    width: 85%
-  @media screen and (max-width: $phone)
-    width: 80%
-    height: 395px
-    object-fit: cover
-    flex-shrink: 0
-    object-position: 10%
+  img
+    max-width: 100%
+
 .pslider-control-left
+  cursor: pointer
   position: absolute
+  z-index: 1
   top: 50%
+  margin-top: -16px
   left: 32px
   @media screen and (max-width: $tablet)
     display: none
 .pslider-control-right
+  cursor: pointer
   position: absolute
+  z-index: 1
   top: 50%
+  margin-top: -16px
   right: 32px
   @media screen and (max-width: $tablet)
     display: none
 
-.pslider-container-active
-  display: block
 
