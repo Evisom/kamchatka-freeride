@@ -6,6 +6,11 @@
     background-color: transparent
     font-size: 15px
     line-height: 20px
+    ::placeholder 
+        color: inherit
+    :focus::placeholder
+        color: transparent
+
 
 .k-select
     @extend .k-input
@@ -15,9 +20,6 @@
     background-repeat: no-repeat
     cursor: pointer
     font-weight: 500
-
-    ::placeholder 
-        color: inherit
 
     option[disabled]
         display: none
