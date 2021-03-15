@@ -5,13 +5,19 @@
         .wrapper
             .mp-header-container
                 .mp-header-container-h Выбирайте и покупайте наши программы онлайн
-                .mp-header-container-form
+                form.mp-header-container-form(autocomplete="off")
                     .mp-header-container-form-select
-                        != partial("/_tmp/components/select", { name: "date", label: "Дата" })
+                        input.k-select(name="date" placeholder="Дата")
                     .mp-header-container-form-select
-                        != partial("/_tmp/components/select", { name: "program", label: "Программа" })
+                        select.k-select(name="program")
+                            option(disabled selected) Программа
+                            option(value="value1") Значение 1
+                            option(value="value2") Значение 2
                     .mp-header-container-form-select
-                        != partial("/_tmp/components/select", { name: "duration", label: "Продолжительность" })
+                        select.k-select(name="duration")
+                            option(disabled selected) Продолжительность
+                            option(value="value1") Значение 1
+                            option(value="value2") Значение 2
                     .mp-header-container-form-button.bluebutton ПОДОБРАТЬ
 
 .mp-programs
