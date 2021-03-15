@@ -143,3 +143,12 @@ $('.k-datepicker').daterangepicker({
         firstDay: 1
     }
 });
+
+$('#pathfilter').click(() => {
+    $('#filter').addClass('prall-filters-active')
+
+})
+
+$('#filterclose').click(() => {
+    $('#filter').removeClass('prall-filters-active')
+})

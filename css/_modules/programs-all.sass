@@ -53,6 +53,45 @@
   @media screen and (max-width: $tablet)
     display: none
 
+.prall-filters-active
+  @media screen and (max-width: $tablet)
+    position: fixed
+    left: 0
+    right: 0
+    bottom: 0
+    top: 0
+    background: rgba(0, 0, 0, 0.5)
+    z-index: 2
+    .prall-filters-close
+      display: block
+      position: absolute
+      right: 8px
+      top: 8px
+  .prall-filters
+    @media screen and (max-width: $tablet)
+      display: grid !important
+      position: fixed
+      top: 120px
+      bottom: auto
+      left: 44px
+      right: 44px
+      background: white
+      grid-template-columns: repeat(2 , 1fr)
+      z-index: 3
+      padding-top: 48px
+      padding-bottom: 48px
+    @media screen and (max-width: $phone)
+      grid-template-columns: repeat(1 , 1fr)
+      left: 21px
+      right: 21px
+      padding-top: 32px
+      padding-bottom: 32px
+
+.prall-filters-close
+  display: none
+
+
+
 .prall-filters-select
   display: flex
   flex-direction: row
@@ -61,7 +100,7 @@
   font-size: 13px
   line-height: 20px
   padding-bottom: 2px
-  border-bottom: 1px solid #F5F6FA
+  //border-bottom: 1px solid #F5F6FA
 
 .prall-programs-grid-heading
   display: flex

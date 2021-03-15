@@ -3,31 +3,36 @@
 .prall-wrapper
     != partial("/_tmp/path-btn")
     .wrapper
-        .prall-filters
-            .prall-filters-select
-                input.k-datepicker(name="date" placeholder="Дата")
-            .prall-filters-select
-                select.k-select(name="duration")
-                    option(disabled selected) Продолжительность
-                    option(value="value1") Значение 1
-                    option(value="value2") Значение 2
-            .prall-filters-select
-                select.k-select(name="type")
-                    option(disabled selected) Тип программы
-                    option(value="value1") Значение 1
-                    option(value="value2") Значение 2
-            .prall-filters-select
-                input.k-input(name="cost" placeholder="Стоимость до")
-            .prall-filters-select
-                select.k-select(name="exp")
-                    option(disabled selected) Сложность
-                    option(value="value1") Значение 1
-                    option(value="value2") Значение 2
-            .prall-filters-select
-                select.k-select(name="child")
-                    option(disabled selected) С детьми
-                    option(value="value1") Значение 1
-                    option(value="value2") Значение 2
+        .prall-filters-wrapper#filter
+            .prall-filters-close#filterclose
+                svg(width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(fill-rule='evenodd' clip-rule='evenodd' d='M9.85445 0.853553C10.0497 0.658291 10.0497 0.341709 9.85445 0.146447C9.65919 -0.0488155 9.34261 -0.0488155 9.14735 0.146447L5.00045 4.29334L0.853553 0.146447C0.658291 -0.0488155 0.341709 -0.0488155 0.146447 0.146447C-0.0488155 0.341709 -0.0488155 0.658291 0.146447 0.853553L4.29334 5.00045L0.146447 9.14735C-0.0488155 9.34261 -0.0488155 9.65919 0.146447 9.85445C0.341709 10.0497 0.658291 10.0497 0.853553 9.85445L5.00045 5.70756L9.14735 9.85445C9.34261 10.0497 9.65919 10.0497 9.85445 9.85445C10.0497 9.65919 10.0497 9.34261 9.85445 9.14735L5.70756 5.00045L9.85445 0.853553Z' fill='white')
+
+            .prall-filters
+                .prall-filters-select
+                    input.k-datepicker(name="date" placeholder="Дата")
+                .prall-filters-select
+                    select.k-select(name="duration")
+                        option(disabled selected) Продолжительность
+                        option(value="value1") Значение 1
+                        option(value="value2") Значение 2
+                .prall-filters-select
+                    select.k-select(name="type")
+                        option(disabled selected) Тип программы
+                        option(value="value1") Значение 1
+                        option(value="value2") Значение 2
+                .prall-filters-select
+                    input.k-input(name="cost" placeholder="Стоимость до")
+                .prall-filters-select
+                    select.k-select(name="exp")
+                        option(disabled selected) Сложность
+                        option(value="value1") Значение 1
+                        option(value="value2") Значение 2
+                .prall-filters-select
+                    select.k-select(name="child")
+                        option(disabled selected) С детьми
+                        option(value="value1") Значение 1
+                        option(value="value2") Значение 2
         .prall-programs-grid
             .prall-programs-grid-heading
                 .blueheading Программы: Все
