@@ -38,6 +38,9 @@
   margin-left: 16px
   margin-top: 16px
   margin-bottom: 44px
+  @media screen and (max-width: $tablet)
+    padding-bottom: 12px
+    margin-top: 0
 
 .program-food-container-element-title-plus
   position: absolute
@@ -49,6 +52,7 @@
 
 
 .program-food-container-element
+  padding: 0 !important
   @media screen and (max-width: $tablet)
     margin-bottom: 8px
 
@@ -63,11 +67,17 @@
     padding-bottom: 1px
     .program-food-container-element-title-plus
       top: 25px
+      svg
+        top: 0 !important
       path
         d: path("M0.870605 0.970703C0.870605 0.694561 1.09446 0.470703 1.37061 0.470703L16.5706 0.470703C16.8467 0.470703 17.0706 0.694561 17.0706 0.970703C17.0706 1.24685 16.8467 1.4707 16.5706 1.4707L1.37061 1.4707C1.09446 1.4707 0.870605 1.24685 0.870605 0.970703Z")
     .program-food-container-element-text
       display: block
 
+.program-food-container-element-title-plus
+  svg
+    top: 4px !important
+    right: 0 !important
 
 
 .program-food-container-warning

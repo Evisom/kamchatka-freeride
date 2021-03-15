@@ -152,3 +152,30 @@ $('#pathfilter').click(() => {
 $('#filterclose').click(() => {
     $('#filter').removeClass('prall-filters-active')
 })
+
+if ($(window).width() < 480 ) {
+    $(".program-items-element-info").addClass("spoiler-body")
+    $(".program-items-element-title").addClass("spoiler-title")
+    $(".program-items-element").addClass("spoiler")
+}
+
+if ($(window).width() < 1024 ) {
+    console.log("!")
+    $(".program-food-container-element-text").addClass("spoiler-body")
+    $(".program-food-container-element-title").addClass("spoiler-title")
+    $(".program-food-container-element").addClass("spoiler")
+
+    $(".program-roadmap-grid-r").addClass("spoiler-body")
+    $(".program-roadmap-grid-plus").addClass("spoiler-title")
+    $(".program-roadmap-grid-hr").addClass("spoiler-title")
+    $(".program-roadmap-grid-block").addClass("spoiler")
+}
+
+
+$('.spoiler-title').click(function(){
+    $(this).parents('.spoiler').toggleClass("active").find('.spoiler-body').slideToggle();
+})
+
+
+
+

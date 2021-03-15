@@ -14,12 +14,12 @@
     .lk1-forms
         .lk1-forms-label Контактная информация:
         .lk1-forms-grid
-            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ")
-            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ")
-            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ")
-            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ")
-            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ")
-            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ")
+            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ").k-input
+            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ").k-input
+            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ").k-input
+            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ").k-input
+            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ").k-input
+            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ").k-input
         .lk1-forms-row
             .lk1-forms-row-c
                 .lk1-forms-row-c-label Социальные сети:
@@ -32,17 +32,17 @@
             .lk1-forms-row-c
                 .lk1-forms-row-c-label На чем катаешься:
                 .lk1-forms-row-c-select
-                    | Сноуборд
-                    svg(width='9' height='5' viewBox='0 0 9 5' fill='none' xmlns='http://www.w3.org/2000/svg')
-                        path(fill-rule='evenodd' clip-rule='evenodd' d='M0.135233 0.158031C0.324098 -0.0434251 0.640516 -0.0536321 0.841972 0.135233L4.5 3.56464L8.15803 0.135233C8.35949 -0.0536321 8.67591 -0.0434251 8.86477 0.158031C9.05364 0.359487 9.04343 0.675905 8.84197 0.86477L4.84197 4.61477C4.64964 4.79508 4.35036 4.79508 4.15803 4.61477L0.158031 0.86477C-0.0434251 0.675905 -0.0536321 0.359487 0.135233 0.158031Z' fill='#212946')
-
+                    select.k-select(name="sort")
+                        option(disabled selected) Сортировка
+                        option(value="value1") Значение 1
+                        option(value="value2") Значение 2
         .lk1-forms-label Контактная информация:
         .lk1-forms-grid
-            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ")
-            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ")
-            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ")
-            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ")
-            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ")
-            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ")
+            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ").k-input
+            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ").k-input
+            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ").k-input
+            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ").k-input
+            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ").k-input
+            input.lk1-forms-grid-el(placeholder="ФАМИЛИЯ").k-input
 
 != partial("/_tmp/footer")
