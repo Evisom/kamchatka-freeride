@@ -1,3 +1,4 @@
+// -- menu --
 $('#burger').click(() => {
     if ($('#mobilemenu').attr('class').split(' ').length == 1) {
         $('#mobilemenu').addClass('navbar-mobilemenu-active')
@@ -5,6 +6,8 @@ $('#burger').click(() => {
         $('#mobilemenu').removeClass('navbar-mobilemenu-active')
     }
 })
+
+// -- sliders --
 
 $('#slider-movies').slick({
     slidesToScroll: 1,
@@ -103,3 +106,40 @@ $('#slider-simprog').slick({
     nextArrow: $('#simprog-next'),
     variableWidth: true,
 })
+
+
+// -- datepicker
+$('input[name="date"]').daterangepicker({
+    locale: {
+        format: 'DD.MM.YYYY',
+        "applyLabel": "Ок",
+        "cancelLabel": "Отмена",
+        "fromLabel": "От",
+        "toLabel": "До",
+        "customRangeLabel": "Произвольный",
+        "daysOfWeek": [
+            "Вс",
+            "Пн",
+            "Вт",
+            "Ср",
+            "Чт",
+            "Пт",
+            "Сб"
+        ],
+        "monthNames": [
+            "Январь",
+            "Февраль",
+            "Март",
+            "Апрель",
+            "Май",
+            "Июнь",
+            "Июль",
+            "Август",
+            "Сентябрь",
+            "Октябрь",
+            "Ноябрь",
+            "Декабрь"
+        ],
+        firstDay: 1
+    }
+});
