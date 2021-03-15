@@ -1,18 +1,26 @@
-.k-select
+
+.k-input
     width: 100%
     border: none
     border-bottom: 1px solid #F5F6FA
+    background-color: transparent
+    font-size: 15px
+    line-height: 20px
+
+.k-select
+    @extend .k-input
     appearance: none
     background-image: url('../img/icon/chevron.svg')
     background-position: center right
     background-repeat: no-repeat
     cursor: pointer
     font-weight: 500
-    font-size: 15px
-    line-height: 20px
-    background-color: transparent
+
     ::placeholder 
         color: inherit
 
     option[disabled]
         display: none
+
+.k-datepicker
+    @extend .k-select

@@ -109,7 +109,7 @@ $('#slider-simprog').slick({
 
 
 // -- datepicker
-$('input[name="date"]').daterangepicker({
+$('.k-datepicker').daterangepicker({
     locale: {
         format: 'DD.MM.YYYY',
         "applyLabel": "Ок",
