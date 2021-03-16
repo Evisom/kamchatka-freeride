@@ -1,0 +1,59 @@
+.bonus-popup-wrapper
+  position: fixed
+  left: 0
+  bottom: 0
+  right: 0
+  top: 0
+  background: rgba(0, 0, 0, 0.5)
+  padding-left: 21px
+  padding-right: 21px
+  @media screen and (max-width: $tablet)
+    overflow-y: scroll
+
+.bonus-popup
+  margin-left: auto
+  margin-right: auto
+  margin-top: 100px
+  background: #FFFFFF
+  box-shadow: 0px 4px 10px rgba(186, 190, 202, 0.5)
+  border-radius: 5px
+  max-width: 1240px
+  padding-left: 48px
+  padding-right: 48px
+  padding-bottom: 56px
+  padding-top: 28px
+  @media screen and (max-width: $tablet)
+    padding: 30px
+  @media screen and (max-width: $phone)
+    padding: 18px
+    margin-top: 32px
+
+.bonus-popup-grid
+  display: grid
+  grid-template-columns: repeat(4 , 1fr)
+  grid-column-gap: 12px
+  .program-card
+    width: 100%
+  @media screen and (max-width: $tablet)
+    grid-template-columns: repeat(2 , 1fr)
+    grid-template-rows: repeat(2 , 250px)
+    grid-row-gap: 12px
+    .program-card
+      height: 100%
+  @media screen and (max-width: $phone)
+    grid-template-columns: repeat(1 , 1fr)
+    grid-template-rows: repeat(4 , 250px)
+.bonus-popup-close
+  position: absolute
+  top: 8px
+  right: 8px
+
+.bonus-popup-title
+  font-weight: 800
+  font-size: 32px
+  line-height: 32px
+  color: #469EDC
+  margin-bottom: 24px
+  @media screen and (max-width: $tablet)
+    font-size: 22px
+    line-height: 20px
