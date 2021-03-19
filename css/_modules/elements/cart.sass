@@ -4,17 +4,114 @@
   background: #FFFFFF
   box-shadow: 0px 4px 10px rgba(186, 190, 202, 0.5)
   border-radius: 5px
+  display: flex
+  flex-direction: row
+  margin-bottom: 24px
+  @media screen and (max-width: $phone)
+    flex-direction: column
+    height: 405px
 
 .cart-element-photo
   width: 300px
   height: 100%
   object-fit: cover
   border-radius: 5px 0 0 5px
-
+  flex-shrink: 0
+  @media screen and (max-width: $tablet)
+    width: 143px
+  @media screen and (max-width: $phone)
+    width: 100%
+    height: 172px
 .cart-element-info
   position: relative
-
+  width: 100%
+  @media screen and (max-width: $phone)
+    height: 100%
 .cart-element-info-title
   font-weight: 500
   font-size: 20px
   line-height: 24px
+  position: absolute
+  left: 32px
+  padding-top: 24px
+  @media screen and (max-width: $tablet)
+    left: 22px
+    top: 22px
+    padding-top: 0
+    max-width: 280px
+  @media screen and (max-width: $phone)
+    top: 21px
+    left: 18px
+
+
+.cart-element-info-delete
+  position: absolute
+  top: 28px
+  right: 36px
+  @media screen and (max-width: $tablet)
+    right: 26px
+    top: 26px
+  @media screen and (max-width: $phone)
+    top: unset
+    right: 22px
+    bottom: 22px
+
+.cart-element-info-info
+  position: absolute
+  top: 52px
+  left: 32px
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+  @media screen and (max-width: $tablet)
+    top: 93px
+    left: 22px
+  @media screen and (max-width: $phone)
+    left: 18px
+    top: 76px
+
+.cart-element-info-price
+  position: absolute
+  top: 63px
+  right: 32px
+  font-weight: 800
+  font-size: 26px
+  line-height: 39px
+  color: #469EDC
+  left: 32px
+  padding-bottom: 8px
+  border-bottom: 1px solid #F5F6FA
+  text-align: right
+  @media screen and (max-width: $tablet)
+    top: 154px
+    left: 22px
+    right: unset
+    border-bottom: none
+  @media screen and (max-width: $phone)
+    top: 136px
+    left: 18px
+
+.cart-element-info-counter
+  position: absolute
+  top: 135px
+  left: 32px
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  width: 72px
+  button
+    outline: none
+    border: none
+    display: flex
+    align-items: center
+    justify-content: center
+  @media screen and (max-width: $tablet)
+    bottom: 32px
+    right: 32px
+    left: unset
+    top: unset
+  @media screen and (max-width: $phone)
+    top: 191px
+    left: 18px
+    bottom: unset
