@@ -49,6 +49,7 @@
 .reservation-form-r1-c
   width: 282px
   margin-right: 48px
+  flex-shrink: 0
   @media screen and (max-width: $phone)
     width: 100%
   @media screen and (max-width: $phone)
@@ -127,3 +128,38 @@
   text-decoration: underline
   margin-left: 3px
   margin-right: 3px
+
+.reservation2
+  height: 820px
+  @media screen and (max-width: $phone)
+    height: fit-content
+
+.reservation-form-r4
+  display: flex
+  flex-direction: row
+  margin-top: 48px
+  .reservation-form-r1-c:last-child
+    width: 128px
+    @media screen and (max-width: $phone)
+      width: 100%
+  @media screen and (max-width: $phone)
+    margin-top: 24px
+    flex-direction: column
+
+.reservation-form-r5
+  display: flex
+  flex-direction: column
+  margin-top: 36px
+  @media screen and (max-width: $phone)
+    margin-top: 24px
+
+.reservation-form-r5-textarea
+  width: 100%
+  resize: none
+  height: 163px
+  margin-top: 12px
+  border: 1px solid rgba(186, 190, 202, 0.3)
+  box-sizing: border-box
+  border-radius: 5px
+  @media screen and (max-width: $phone)
+    height: 266px
