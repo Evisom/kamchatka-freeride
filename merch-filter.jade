@@ -10,29 +10,26 @@
 
             .prall-filters
                 .prall-filters-select
-                    input.k-datepicker(name="date" placeholder="Дата")
+                    select.k-select(name="duration")
+                        option(disabled selected) Пол
+                        option(value="value1") Значение 1
+                        option(value="value2") Значение 2
                 .prall-filters-select
                     select.k-select(name="duration")
-                        option(disabled selected) Продолжительность
+                        option(disabled selected) Тип вещи
                         option(value="value1") Значение 1
                         option(value="value2") Значение 2
                 .prall-filters-select
-                    select.k-select(name="type")
-                        option(disabled selected) Тип программы
+                    select.k-select(name="duration")
+                        option(disabled selected) Размер
                         option(value="value1") Значение 1
                         option(value="value2") Значение 2
                 .prall-filters-select
-                    input.k-input(name="cost" placeholder="Стоимость до")
-                .prall-filters-select
-                    select.k-select(name="exp")
-                        option(disabled selected) Сложность
+                    select.k-select(name="duration")
+                        option(disabled selected) Цвет
                         option(value="value1") Значение 1
                         option(value="value2") Значение 2
-                .prall-filters-select
-                    select.k-select(name="child")
-                        option(disabled selected) С детьми
-                        option(value="value1") Значение 1
-                        option(value="value2") Значение 2
+
         .merch-header-filter
                 .merch-header-grid-element
                     .merch-header-grid-element-text Новинки в аксессуарах

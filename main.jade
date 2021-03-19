@@ -33,7 +33,8 @@
             != partial("/_tmp/program-card")
             != partial("/_tmp/program-card")
             != partial("/_tmp/program-card")
-        .mp-programs-button.bluebutton посмотреть все программы
+        .bluebutton-wrapper
+            a.bluebutton(href="#") посмотреть все программы
 
 != partial("/_tmp/movies")
 
@@ -62,7 +63,8 @@
                 != partial("/_tmp/program-card")
             .mp-blog-container-slide.mp-blog-container-slide--full
                 != partial("/_tmp/program-card")
-        .mp-blog-button.bluebutton перейти в блог
+        .bluebutton-wrapper.mp-blog-button
+            .bluebutton перейти в блог
 
 != partial("/_tmp/reviews")
 
