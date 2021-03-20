@@ -1,0 +1,250 @@
+.checkout
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+
+.checkout-left
+  background: #FFFFFF
+  box-shadow: 0px 4px 10px rgba(186, 190, 202, 0.5)
+  border-radius: 5px
+  min-height: 100px
+  width: auto
+  flex-grow: 1
+  padding: 24px
+  @media screen and (max-width: $phone)
+    width: 100%
+  .bluebutton-wrapper
+    margin-top: 12px
+    margin-bottom: 28px
+    @media screen and (max-width: $phone)
+      margin-bottom: 16px
+    .bluebutton
+      @media screen and (max-width: $phone)
+        width: 100%
+
+.checkout-right
+  background: #FFFFFF
+  box-shadow: 0px 4px 10px rgba(186, 190, 202, 0.5)
+  border-radius: 5px
+  width: 328px
+  height: 474px
+  padding: 24px
+  margin-left: 48px
+  @media screen and (max-width: $tablet)
+    display: none
+  .bluebutton
+    margin-top: 36px
+    height: 48px
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+
+.checkout-right-title
+  font-weight: 500
+  font-size: 20px
+  line-height: 24px
+  margin-bottom: 24px
+
+.checkout-right-price
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-top: 12px
+
+.checkout-right-total
+  margin-top: 36px
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+
+.checkout-right-price-total
+  font-weight: 500
+  font-size: 32px
+  line-height: 32px
+  margin-top: 8px
+
+.checkout-right-bonus
+  font-weight: 500
+  margin-top: 4px
+  font-size: 15px
+  line-height: 20px
+  color: #BABECA
+
+.checkout-right-prepaid
+  margin-top: 36px
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+
+.checkout-right-info
+  margin-top: 12px
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+
+.checkout-left-title
+  font-weight: 800
+  font-size: 22px
+  line-height: 30px
+  color: #469EDC
+
+.checkout-left-phone
+  margin-top: 20px
+  @media screen and (max-width: $tablet)
+    flex-direction: column !important
+
+.checkout-left-phone-input
+  background: #FFFFFF
+  border: 1px solid rgba(186, 190, 202, 0.3)
+  box-sizing: border-box
+  border-radius: 30px
+  width: 309px
+  flex-shrink: 0
+  height: 34px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  input
+    border-radius: 30px
+    padding-left: 16px
+    border: none
+    min-width: 0
+  input::placeholder
+    font-weight: 500
+    font-size: 15px
+    color: #BABECA
+    vertical-align: center
+    line-height: 34px
+  @media screen and (max-width: $tablet)
+    margin-top: 24px
+  @media screen and (max-width: $phone)
+    width: 100%
+
+.checkout-left-phone
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+.checkout-left-phone-text
+  font-weight: 500
+  font-size: 15px
+  line-height: 18px
+  margin-right: 64px
+  max-width: 340px
+
+.checkout-left-phone-input-button
+  height: 100%
+  border: 1px solid #469EDC
+  box-sizing: border-box
+  border-radius: 30px
+  outline: none
+  width: 107px
+  font-weight: 500
+  font-size: 10px
+  line-height: 20px
+  color: #469EDC
+
+
+.checkout-left-phone-bonus
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-top: 36px
+  @media screen and (max-width: $phone)
+    flex-direction: column
+
+.checkout-left-phone-bonus-text
+  font-weight: 500
+  font-size: 15px
+  line-height: 18px
+  max-width: 149px
+
+.checkout-left-phone-bonus-input-text
+  font-weight: 600
+  text-align: center
+  font-size: 13px
+  line-height: 15px
+  color: #469EDC
+
+.checkout-left-phone-bonus-input
+  width: 309px
+  @media screen and (max-width: $phone)
+    width: 100%
+    margin-top: 16px
+
+.checkout-left-phone-bonus-input-el
+  width: 100%
+  appearance: none
+  height: 1px
+  background: rgba(186, 190, 202, 0.5)
+.checkout-left-phone-bonus-input-el::-ms-thumb
+  appearance: none
+  width: 16px
+  height: 16px
+  border: 2px solid #469EDC
+  background: white
+  border-radius: 50%
+.checkout-left-phone-bonus-input-el::-webkit-slider-thumb
+  appearance: none
+  width: 16px
+  height: 16px
+  border: 2px solid #469EDC
+  background: white
+  border-radius: 50%
+
+.checkout-left-phone-bonus-input-el::-moz-range-thumb
+  appearance: none
+  width: 16px
+  height: 16px
+  border: 2px solid #469EDC
+  background: white
+  border-radius: 50%
+
+.checkout-left-signin
+  width: 100%
+  background: #F5F6FA
+  margin-top: 48px
+  text-align: center
+  padding: 8px
+  @media screen and (max-width: $phone)
+    padding: 10px
+  span
+    display: inline
+  a
+    display: inline
+    color: #469EDC
+    margin-left: 6px
+
+.checkout-left-grid
+  display: grid
+  grid-template-columns: repeat(2 , 1fr)
+  grid-column-gap: 32px
+  grid-row-gap: 32px
+  margin-top: 42px
+  @media screen and (max-width: $tablet)
+    grid-column-gap: 21px
+    grid-row-gap: 21px
+  @media screen and (max-width: $phone)
+    grid-template-columns: repeat(1 , 1fr)
+
+
+.checkout-left-textarea
+  margin-top: 44px
+  display: flex
+  flex-direction: column
+  label
+    font-weight: 500
+    font-size: 15px
+    line-height: 18px
+  textarea
+    margin-top: 12px
+    border: 1px solid rgba(186, 190, 202, 0.3)
+    resize: none
+    width: 100%
+    height: 98px
+    padding: 16px
+    border-radius: 5px
+
+.checkout-left-checkbox
+  margin-top: 36px
