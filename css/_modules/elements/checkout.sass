@@ -245,6 +245,89 @@
     height: 98px
     padding: 16px
     border-radius: 5px
+    @media screen and (max-width: $phone)
+      height: 144px
 
 .checkout-left-checkbox
   margin-top: 36px
+
+.checkout-left-delivery
+  margin-top: 32px
+
+.checkout-left-delivery-title
+  font-weight: 500
+  font-size: 15px
+  line-height: 18px
+
+
+.checkout-left-delivery-container
+  display: flex
+  flex-direction: row
+  margin-top: 22px
+  @media screen and (max-width: $phone)
+    flex-direction: column
+
+.checkout-left-delivery-el
+  max-width: 200px
+  display: flex
+  flex-direction: row
+  flex-shrink: 0
+  margin-right: 24px
+  @media screen and (max-width: $phone)
+    margin-bottom: 20px
+  .k-checkbox
+    flex-shrink: 0
+    margin-right: 10px
+
+.checkout-left-delivery-el-text-title
+  font-weight: normal
+  font-size: 15px
+  line-height: 20px
+.checkout-left-delivery-el-text-subtitle
+  font-weight: normal
+  font-size: 10px
+  line-height: 15px
+  margin-top: 6px
+
+.checkout-left-addr
+  display: grid
+  grid-template-columns: repeat(6 , 1fr)
+  grid-template-rows: 1fr 1fr
+  gap: 30px
+  margin-top: 22px
+  grid-template-areas: "index index index city city city" "street street street house building apt"
+  @media screen and (max-width: $tablet)
+    grid-template-areas: "index city street" "house building apt"
+    grid-template-columns: repeat(3 , 1fr)
+    grid-row-gap: 40px
+    grid-column-gap: 16px
+    margin-top: 32px
+  @media screen and (max-width: $phone)
+    grid-template-areas: "index"  "city" "street" "house" "building" "apt"
+    grid-template-columns: 1fr
+    grid-row-gap: 24px
+    grid-template-rows: repeat(6 , 1fr)
+    margin-top: 48px
+  input:nth-child(1)
+    grid-area: index
+  input:nth-child(2)
+    grid-area: city
+  input:nth-child(3)
+    grid-area: street
+  input:nth-child(4)
+    grid-area: house
+  input:nth-child(5)
+    grid-area: building
+  input:nth-child(6)
+    grid-area: apt
+
+
+
+
+
+
+
+
+
+
+
