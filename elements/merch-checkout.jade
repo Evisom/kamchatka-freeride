@@ -17,10 +17,15 @@
                 span Оставьте ваши контактные данные или
                 a(href="#") войдите на сайт
             .checkout-left-grid
-                input.k-input(placeholder="ИМЯ*")
-                input.k-input(placeholder="ИМЯ*")
-                input.k-input(placeholder="ИМЯ*")
-                input.k-input(placeholder="ИМЯ*")
+                .k-input-wrapper
+                    input.k-input.k-input-error(placeholder="ИМЯ*")
+                    span Необходимо заполнить
+                .k-input-wrapper
+                    input.k-input(placeholder="ИМЯ*")
+                .k-input-wrapper
+                    input.k-input(placeholder="ИМЯ*")
+                .k-input-wrapper
+                    input.k-input(placeholder="ИМЯ*")
             .checkout-left-delivery
                 .checkout-left-delivery-title Доставка:
                 .checkout-left-delivery-container
