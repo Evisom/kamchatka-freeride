@@ -107,6 +107,13 @@ $('#slider-simprog').slick({
     variableWidth: true,
 })
 
+$('#slider-kfc').slick({
+    slidesToScroll: 1,
+    prevArrow: $('#kfc-prev'),
+    nextArrow: $('#kfc-next'),
+    variableWidth: true,
+})
+
 
 // -- datepicker
 $('.k-datepicker').daterangepicker({
