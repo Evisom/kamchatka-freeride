@@ -64,7 +64,7 @@ $('#slider-guide').slick({
     variableWidth: true,
 })
 
-$('.pslider-slides, .merch-item-photo-slider-container').slick({
+const commonSlider = {
     slidesToScroll: 1,
     slidesToShow: 1,
     dots: true,
@@ -76,6 +76,28 @@ $('.pslider-slides, .merch-item-photo-slider-container').slick({
     <circle cx="16" cy="16" r="15.5" fill="#BABECA" fill-opacity="0.5" stroke="white"></circle>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1953 10.896C16.3204 10.7706 16.4899 10.7002 16.6667 10.7002C16.8434 10.7002 17.013 10.7706 17.138 10.896L21.8047 15.5775C21.9296 15.703 21.9999 15.873 21.9999 16.0504C21.9999 16.2277 21.9296 16.3978 21.8047 16.5232L17.138 21.2047C17.0123 21.3266 16.8439 21.394 16.6691 21.3924C16.4943 21.3909 16.3271 21.3206 16.2035 21.1966C16.0798 21.0726 16.0097 20.9048 16.0082 20.7295C16.0067 20.5541 16.0739 20.3852 16.1953 20.2591L19.724 16.7192L10.6667 16.7192C10.4899 16.7192 10.3203 16.6487 10.1953 16.5233C10.0702 16.3979 10 16.2277 10 16.0504C10 15.873 10.0702 15.7029 10.1953 15.5775C10.3203 15.452 10.4899 15.3816 10.6667 15.3816L19.724 15.3816L16.1953 11.8417C16.0704 11.7163 16.0001 11.5462 16.0001 11.3688C16.0001 11.1915 16.0704 11.0214 16.1953 10.896Z" fill="white"></path>
   </svg></div>`,
+}
+
+$('.merch-item-photo-slider-container').slick({
+    ...commonSlider,
+})
+
+$('.pslider-slides').each((i, el) => {
+    const centerMode = $(el).attr('data-center-mode') === 'true'
+    $(el).slick({
+        ...commonSlider,
+        variableWidth: false,
+        centerMode: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    centerMode,
+                    variableWidth: centerMode,
+                },
+            },
+        ],
+    })
 })
 
 $('#slider-items').slick({
@@ -83,7 +105,6 @@ $('#slider-items').slick({
     prevArrow: $('#items-prev'),
     nextArrow: $('#items-next'),
     variableWidth: false,
-
 
     responsive: [
         {
@@ -95,8 +116,8 @@ $('#slider-items').slick({
         },
         {
             breakpoint: 480,
-            settings: 'unslick'
-        }
+            settings: 'unslick',
+        },
     ],
 })
 
@@ -114,87 +135,75 @@ $('#slider-kfc').slick({
     variableWidth: true,
 })
 
-
-
 $('.team-member-card').each((i, el) => {
-    $(el).find('.team-member-info-slider-container').slick({
-        slidesToScroll: 1,
-        prevArrow: $(el).find('.slider-heading-controls-prev'),
-        nextArrow: $(el).find('.slider-heading-controls-next'),  
-        variableWidth: true,
-    })
+    $(el)
+        .find('.team-member-info-slider-container')
+        .slick({
+            slidesToScroll: 1,
+            prevArrow: $(el).find('.slider-heading-controls-prev'),
+            nextArrow: $(el).find('.slider-heading-controls-next'),
+            variableWidth: true,
+        })
 })
-
-
 
 // -- datepicker
 $('.k-datepicker').daterangepicker({
     locale: {
         format: 'DD.MM.YYYY',
-        "applyLabel": "Ок",
-        "cancelLabel": "Отмена",
-        "fromLabel": "От",
-        "toLabel": "До",
-        "customRangeLabel": "Произвольный",
-        "daysOfWeek": [
-            "Вс",
-            "Пн",
-            "Вт",
-            "Ср",
-            "Чт",
-            "Пт",
-            "Сб"
+        applyLabel: 'Ок',
+        cancelLabel: 'Отмена',
+        fromLabel: 'От',
+        toLabel: 'До',
+        customRangeLabel: 'Произвольный',
+        daysOfWeek: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+        monthNames: [
+            'Январь',
+            'Февраль',
+            'Март',
+            'Апрель',
+            'Май',
+            'Июнь',
+            'Июль',
+            'Август',
+            'Сентябрь',
+            'Октябрь',
+            'Ноябрь',
+            'Декабрь',
         ],
-        "monthNames": [
-            "Январь",
-            "Февраль",
-            "Март",
-            "Апрель",
-            "Май",
-            "Июнь",
-            "Июль",
-            "Август",
-            "Сентябрь",
-            "Октябрь",
-            "Ноябрь",
-            "Декабрь"
-        ],
-        firstDay: 1
-    }
-});
+        firstDay: 1,
+    },
+})
 
 $('#pathfilter').click(() => {
     $('#filter').addClass('prall-filters-active')
-
 })
 
 $('#filterclose').click(() => {
     $('#filter').removeClass('prall-filters-active')
 })
 
-if ($(window).width() < 480 ) {
-    $(".program-items-element-info").addClass("spoiler-body")
-    $(".program-items-element-title").addClass("spoiler-title")
-    $(".program-items-element").addClass("spoiler")
+if ($(window).width() < 480) {
+    $('.program-items-element-info').addClass('spoiler-body')
+    $('.program-items-element-title').addClass('spoiler-title')
+    $('.program-items-element').addClass('spoiler')
 }
 
-if ($(window).width() < 1024 ) {
-    console.log("!")
-    $(".program-food-container-element-text").addClass("spoiler-body")
-    $(".program-food-container-element-title").addClass("spoiler-title")
-    $(".program-food-container-element").addClass("spoiler")
+if ($(window).width() < 1024) {
+    console.log('!')
+    $('.program-food-container-element-text').addClass('spoiler-body')
+    $('.program-food-container-element-title').addClass('spoiler-title')
+    $('.program-food-container-element').addClass('spoiler')
 
-    $(".program-roadmap-grid-r").addClass("spoiler-body")
-    $(".program-roadmap-grid-plus").addClass("spoiler-title")
-    $(".program-roadmap-grid-hr").addClass("spoiler-title")
-    $(".program-roadmap-grid-block").addClass("spoiler")
+    $('.program-roadmap-grid-r').addClass('spoiler-body')
+    $('.program-roadmap-grid-plus').addClass('spoiler-title')
+    $('.program-roadmap-grid-hr').addClass('spoiler-title')
+    $('.program-roadmap-grid-block').addClass('spoiler')
 }
 
-
-$('.spoiler-title').click(function(){
-    $(this).parents('.spoiler').toggleClass("active").find('.spoiler-body').slideToggle();
+$('.spoiler-title').click(function () {
+    $(this)
+        .parents('.spoiler')
+        .toggleClass('active')
+        .find('.spoiler-body')
+        .slideToggle()
 })
-
-
-
-
