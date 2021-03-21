@@ -1,0 +1,135 @@
+
+
+.myreservation
+  width: 640px
+  height: 490px
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(186, 190, 202, 0.5)
+  border-radius: 5px
+  margin: auto
+  padding-left: 32px
+  padding-right: 32px
+  padding-top: 44px
+  padding-bottom: 16px
+  position: relative
+  .program-mobilefixed
+    display: flex
+    justify-content: center
+    position: absolute
+    bottom: 12px
+    left: 0
+    right: 0
+    box-shadow: none
+    @media screen and (max-width: $phone)
+      bottom: 0
+    a
+      margin-right: 36px
+      @media screen and (max-width: $phone)
+        margin-right: 4px
+
+  @media screen and (max-width: $phone)
+    width: 100%
+    padding-left: 24px
+    padding-right: 24px
+    padding-top: 36px
+    height: fit-content
+.myreservation-info
+  margin-top: 24px
+  padding-bottom: 20px
+  border-bottom: 1px solid rgba(186, 190, 202, 0.3)
+  @media screen and (max-width: $phone)
+    padding-bottom: 32px
+.checkout-right-price-el
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 12px
+  @media screen and (max-width: $phone)
+    margin-bottom: 24px
+.myreservation-info-price
+  width: 280px
+  flex-shrink: 0
+  @media screen and (max-width: $phone)
+    width: 100%
+  .checkout-right-price-minus
+    display: flex
+    align-items: center
+
+.myreservation-info
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  @media screen and (max-width: $phone)
+    flex-direction: column
+.myreservation-info-delivery
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+  margin-top: 10px
+  margin-left: 80px
+  @media screen and (max-width: $phone)
+    margin-left: 0
+    margin-top: 0
+.myreservation-title
+  font-weight: 500
+  font-size: 20px
+  line-height: 24px
+
+.myreservation-grid-prep
+  grid-area: prep
+.myreservation-grid-total
+  grid-area: total
+  .checkout-right-total
+    @media screen and (max-width: $phone)
+      margin-top: 0
+.myreservation-grid-button
+  grid-area: btn
+  button
+    border: 1px solid #469EDC
+    border-radius: 30px
+    font-weight: 500
+    color: #469EDC
+    width: 251px
+    height: 48px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: auto
+    font-size: 15px
+    line-height: 22px
+    text-transform: uppercase
+    @media screen and (max-width: $phone)
+      width: 100%
+
+.myreservation2
+  margin-top: 128px
+  .myreservation-grid
+    grid-template-areas: "total btn" ". ."
+    @media screen and (max-width: $phone)
+      grid-template-areas: "total" "btn" "."
+      .myreservation-grid-total
+        margin-top: 30px
+  .myreservation-grid-button
+    display: flex
+    align-items: flex-end
+    @media screen and (max-width: $phone)
+      align-items: flex-start
+      margin-top: 24px
+    button
+      margin: 0
+  @media screen and (max-width: $phone)
+    height: 525px
+.myreservation-grid
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-template-rows: 1fr 1fr
+  gap: 36px 64px
+  grid-template-areas: "prep total" "btn btn"
+  @media screen and (max-width: $phone)
+    grid-template-columns: 1fr
+    grid-template-rows: repeat(3 , 1fr)
+    grid-template-areas: "prep" "total" "btn"
+    gap: 32px
+
+
