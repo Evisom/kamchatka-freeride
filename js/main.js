@@ -107,6 +107,25 @@ $('#slider-simprog').slick({
     variableWidth: true,
 })
 
+$('#slider-kfc').slick({
+    slidesToScroll: 1,
+    prevArrow: $('#kfc-prev'),
+    nextArrow: $('#kfc-next'),
+    variableWidth: true,
+})
+
+
+
+$('.team-member-card').each((i, el) => {
+    $(el).find('.team-member-info-slider-container').slick({
+        slidesToScroll: 1,
+        prevArrow: $(el).find('.slider-heading-controls-prev'),
+        nextArrow: $(el).find('.slider-heading-controls-next'),  
+        variableWidth: true,
+    })
+})
+
+
 
 // -- datepicker
 $('.k-datepicker').daterangepicker({
