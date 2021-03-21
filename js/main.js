@@ -115,6 +115,18 @@ $('#slider-kfc').slick({
 })
 
 
+
+$('.team-member-card').each((i, el) => {
+    $(el).find('.team-member-info-slider-container').slick({
+        slidesToScroll: 1,
+        prevArrow: $(el).find('.slider-heading-controls-prev'),
+        nextArrow: $(el).find('.slider-heading-controls-next'),  
+        variableWidth: true,
+    })
+})
+
+
+
 // -- datepicker
 $('.k-datepicker').daterangepicker({
     locale: {
